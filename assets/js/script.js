@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Loop through links and add "active" class if URL matches
     navLinks.forEach(link => {
       if (link.getAttribute("href") === currentPage) {
-        link.classList.add("text-blue-600", "font-bold"); // Active link styles
+        link.classList.add("text-black-600", "font-bold"); // Active link styles
       } else {
         link.classList.remove("text-blue-600"); // Remove active class if not active
       }
