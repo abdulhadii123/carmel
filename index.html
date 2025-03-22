@@ -1,0 +1,458 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Carmel</title>
+  </head>
+  <body>
+    <header class="bg-white wrapper " data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <div class="flex items-center w-[58px]">
+          <img src="./assets/images/CHS.png" alt="Logo" class="width-100%" />
+        </div>
+
+        <!-- Navigation Links -->
+        <nav id="nav-links" class="hidden md:flex space-x-6">
+            <a href="./index.html" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+            <a href="./aboutpage.html" class="nav-link text-gray-700 hover:text-blue-600">About Carmel Run</a>
+            <a href="#" class="nav-link text-gray-700 hover:text-blue-600">Rules & Route Map</a>
+            <a href="#" class="nav-link text-gray-700 hover:text-blue-600">Result</a>
+          </nav>
+
+        <!-- Register Button -->
+        <div>
+          <a
+            href="/registerpage.html"
+            class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-orange-600 transition"
+            >Register Now</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden md:hidden bg-white p-4">
+        <a href="/index.html" class="block py-2 text-blue-600">Home</a>
+        <a href="/aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600"
+          >About Carmel run</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Rules & Root map</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Result</a
+        >
+      </nav>
+    </header>
+    <!-- Header ends -->
+    <!-- ================================================================================================================================ -->
+    <!-- Spotlight begin -->
+    <section id="spotlight" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+      <div class="wrapper">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="image">
+            <img src="./assets/images/Spotlight.png" alt="Spotlight Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Spotlight ends  -->
+    <!-- ============================================================================================================================== -->
+    <!-- About begin -->
+    <section id="about" class="py-[70px]" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
+      <div class="wrapper">
+        <div
+          class="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-10"
+        >
+          <!-- Left Section -->
+          <div class="left w-full lg:w-[48%] text-center lg:text-left">
+            <div class="ab flex items-center">
+              <div class="icon">
+                <img src="./assets/images/ab.png" alt="" />
+              </div>
+              <h5 class="font-bold text-[16px] text-[#5A95D1]">
+                About the Event
+              </h5>
+            </div>
+            <h1 class="text-3xl md:text-4xl text-black font-bold">
+              🏃‍♂️Carmel Run 2025 – Stride for a Cause! 🏅
+            </h1>
+            <p class="text-base md:text-lg leading-relaxed mt-2">
+              The Carmel Run 2025 is more than just a race—it's a movement!
+              Organized by Carmel High School, Basaveshwaranagar, this event is
+              designed to ignite the spirit of fitness, camaraderie, and social
+              responsibility. Whether you’re a seasoned runner or just starting
+              your fitness journey, there's a category for everyone!
+            </p>
+
+            <div class="relative w-full max-w-4xl mx-auto mt-6">
+              <svg
+                width="100%"
+                height="auto"
+                viewBox="0 0 752 309"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="relative left-[-10%] sm:left-[-15%] md:left-[-114px] top-[20px] sm:top-[28px] md:top-[36px]"
+              >
+                <path
+                  d="M340.5 101.328L341.012 100.469L340.5 101.328ZM478.54 254.328L479.348 254.917L478.54 254.328ZM170.412 202.492L169.905 203.354L169.93 203.368L169.955 203.381L170.412 202.492ZM751.108 307.994C751.657 307.935 752.054 307.441 751.994 306.892L751.025 297.945C750.966 297.396 750.473 296.999 749.924 297.058C749.375 297.118 748.978 297.611 749.037 298.16L749.898 306.113L741.945 306.975C741.396 307.034 740.999 307.527 741.058 308.076C741.118 308.626 741.611 309.022 742.16 308.963L751.108 307.994ZM-0.127263 1.99187C28.0778 5.61075 86.8087 14.968 151.652 31.2739C216.512 47.5839 287.406 70.8262 339.988 102.187L341.012 100.469C288.177 68.9575 217.057 45.6588 152.14 29.3343C87.2062 13.0057 28.3958 3.63515 0.127263 0.00813097L-0.127263 1.99187ZM339.988 102.187C405.868 141.478 446.198 171.507 467.094 195.725C477.537 207.828 483.053 218.398 484.545 227.873C486.03 237.305 483.544 245.768 477.732 253.739L479.348 254.917C485.424 246.584 488.1 237.595 486.521 227.562C484.948 217.573 479.176 206.666 468.608 194.418C447.483 169.935 406.904 139.767 341.012 100.469L339.988 102.187ZM477.732 253.739C474.54 258.115 468.935 261.457 461.204 263.791C453.488 266.122 443.766 267.415 432.492 267.777C409.948 268.503 381.363 265.504 350.577 259.802C289.002 248.396 218.814 226.212 170.868 201.602L169.955 203.381C218.113 228.1 288.496 250.336 350.213 261.768C381.072 267.484 409.813 270.508 432.557 269.776C443.927 269.411 453.839 268.105 461.783 265.706C469.712 263.311 475.792 259.792 479.348 254.917L477.732 253.739ZM170.918 201.63C157.942 194.006 144.963 183.918 135.766 173.104C126.536 162.252 121.284 150.876 123.291 140.606C125.285 130.405 134.551 120.818 155.534 113.772C176.494 106.733 208.894 102.328 256.608 102.328V100.328C208.812 100.328 176.16 104.736 154.897 111.876C133.657 119.008 123.529 128.964 121.329 140.222C119.142 151.411 124.896 163.41 134.242 174.4C143.622 185.428 156.791 195.65 169.905 203.354L170.918 201.63ZM256.608 102.328C351.902 102.328 454.041 136.537 543.051 179.356C632.048 222.17 707.827 273.546 750.373 307.779L751.627 306.221C708.967 271.897 633.06 220.437 543.918 177.554C454.788 134.677 352.334 100.328 256.608 100.328V102.328Z"
+                  fill="#5A95D1"
+                />
+              </svg>
+
+              <!-- Floating Labels -->
+              <div
+                class="absolute top-[77%] left-[4%] md:left-[8%] bg-yellow-300 px-4 py-2 rounded-full shadow-md flex items-center space-x-2 text-sm md:text-base"
+              >
+                <span>⚖️</span>
+                <span class="font-semibold">Integrity</span>
+              </div>
+
+              <div
+                class="absolute top-[24%] left-[4%] md:left-[8%] bg-orange-400 px-4 py-2 rounded-full shadow-md flex items-center space-x-2 text-sm md:text-base"
+              >
+                <span>🤝</span>
+                <span class="font-semibold">Compassion</span>
+              </div>
+
+              <div
+                class="absolute top-[43%] left-[21%] bg-[#E39EEC] px-4 py-2 rounded-full shadow-md flex items-center space-x-2 text-sm md:text-base"
+              >
+                <span>🏆</span>
+                <span class="font-semibold">Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="right bg-[#66C478] rounded-3xl w-full lg:w-[48%] p-8 flex flex-col items-center"
+          >
+            <div class="w-[90%] md:w-[90%]">
+              <img
+                src="./assets/images/bgimage.png"
+                alt="Event Image"
+                class="rounded-lg w-full mt-[28px]"
+              />
+            </div>
+            <div class="content flex items-center justify-center gap-4 my-4">
+              <div class="icon w-[40px] md:w-[50px]">
+                <img src="./assets/images/Testimonial.png" alt="Testimonial" />
+              </div>
+              <div class="para text-center">
+                <p class="text-white text-sm md:text-lg">
+                  "Every step you take is a step towards a healthier and happier
+                  tomorrow!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About ends -->
+    <!-- ============================================================================================================================= -->
+    <!-- Category begins -->
+    <section class="w-full bg-[#F9F9F9] py-10" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Category Details
+      </h2>
+
+      <div class="relative" >
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper mb-10">
+            <!-- Card Items -->
+            <div class="swiper-slide flex justify-center">
+              <div
+                class="card bg-orange-500 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between w-full max-w-sm md:max-w-md"
+              >
+                <h3 class="font-bold text-lg">3KM FUN RUN</h3>
+                <p class="text-sm">
+                  Event T-shirt, E-Certificate, breakfast, safety & medical
+                  support.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center">
+              <div
+                class="card bg-cyan-500 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between w-full max-w-sm md:max-w-md"
+              >
+                <h3 class="font-bold text-lg">Student 5KM</h3>
+                <p class="text-sm">
+                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
+                  Medical Support.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center">
+              <div
+                class="card bg-lime-500 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between w-full max-w-sm md:max-w-md"
+              >
+                <h3 class="font-bold text-lg">Student 10KM</h3>
+                <p class="text-sm">
+                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
+                  Medical Support.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center">
+              <div
+                class="card bg-teal-400 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between w-full max-w-sm md:max-w-md"
+              >
+                <h3 class="font-bold text-lg">Adult 5KM</h3>
+                <p class="text-sm">
+                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
+                  Medical Support.
+                </p>
+                <p class="text-xs mt-2">
+                  No cash prize. Winners receive goodies & vouchers.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center">
+              <div
+                class="card bg-yellow-500 text-black p-6 rounded-2xl shadow-lg flex flex-col justify-between w-full max-w-sm md:max-w-md"
+              >
+                <h3 class="font-bold text-lg">Adult 10KM</h3>
+                <p class="text-sm">
+                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
+                  Medical Support.
+                </p>
+                <p class="text-xs mt-2 font-semibold">
+                  No cash prize. Winners receive goodies & vouchers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="absolute bottom-0 right-0 flex justify-center gap-6 p-4">
+          <button
+            class="swiper-button-prev text-black p-4 rounded-full shadow-lg hover:bg-gray-300 transition border-2 border-black bg-white left-[-56px]"
+          ></button>
+          <button
+            class="swiper-button-next text-black p-4 rounded-full shadow-lg hover:bg-gray-300 transition border-2 border-black bg-white"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- Category ends -->
+    <!-- ==================================================================================================================== -->
+
+    <!-- Results begins -->
+    <section class="text-center space-y-4 py-[70px]" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Results</h2>
+      <p class="text-sm md:text-base text-blue-500">
+        Click the button to view and download the results<span
+          class="text-gray-400"
+          >.</span
+        >
+      </p>
+      <button
+        class="bg-orange-500 text-white font-semibold italic px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 transition"
+      >
+        Register Now
+      </button>
+    </section>
+
+    <!-- Result ends  -->
+    <!-- ==================================================================================================================== -->
+
+    <!-- Footer begins -->
+    <footer
+    class="bg-gray-900 text-white py-10"
+    data-aos="fade"
+    data-aos-delay="100"
+    data-aos-offset="200"
+  >
+    <div class="wrapper">
+      <!-- Logo & School Name -->
+      <div
+        class="flex flex-col md:flex-row justify-center items-center mb-10 gap-6"
+      >
+        <div class="w-24 flex-shrink-0">
+          <img src="./assets/images/CHS.png" alt="Carmel High School Logo" />
+        </div>
+        <div class="text-center md:text-left">
+          <h2 class="text-xl font-semibold text-[#396DB2]">
+            CARMEL HIGH SCHOOL
+          </h2>
+          <p class="text-[16px] text-white">BASAVESHWARANAGAR, BANGALORE</p>
+        </div>
+      </div>
+
+      <!-- Footer Content -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <!-- Contact Section -->
+        <div class="text-white">
+          <h3 class="text-lg font-semibold text-white">Contact</h3>
+          <hr class="w-full my-2 border border-[#396DB2]" />
+          <p
+            class="text-[16px] flex items-center justify-center md:justify-start text-white"
+          >
+            📍 2nd Block, 3rd Stage, Judges' Colony, <br />
+            West of Chord Road, Basaveshwaranagar, Bangalore 560 079.
+          </p>
+          <p
+            class="text-[16px] mt-2 flex items-center justify-center md:justify-start text-white"
+          >
+            <a href="tel:080-23227015">📞 080-23227015</a>
+          </p>
+          <p
+            class="text-[16px] mt-2 flex items-center justify-center md:justify-start text-white"
+          >
+            <a href="mailto: info@carmelhighschool.org"
+              >✉️ info@carmelhighschool.org</a
+            >
+          </p>
+        </div>
+
+        <!-- About Section -->
+        <div>
+          <h3 class="text-lg font-semibold text-white">About</h3>
+          <hr class="w-full my-2 border border-[#396DB2]" />
+          <p class="text-[16px] text-white">
+            Carmel School is a learning community of excellence, enabling
+            students of different language abilities to become independent
+            learners and effective communicators.
+          </p>
+        </div>
+
+        <!-- Get Into Section -->
+        <div>
+          <h3 class="text-lg font-semibold text-white">Get Into</h3>
+          <hr class="w-full my-2 border border-[#396DB2]" />
+          <ul class="text-sm space-y-1">
+            <li>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-200 text-[16px]"
+                >Welcome To Carmel</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-200 text-[16px]"
+                >Carmel Family</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-200 text-[16px]"
+                >Admission Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-200 text-[16px]"
+                >Campus Tour</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-200 text-[16px]"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- App Download Section -->
+      <div class="text-center mt-10">
+        <h3 class="text-lg font-semibold text-white">Get Carmel 360 on:</h3>
+        <div class="flex justify-center gap-4 mt-3">
+          <a href="#"
+            ><img
+              src="./assets/images/GooglePlay.png"
+              alt="Google Play"
+              class="h-10 w-auto"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/images/AppStore.png"
+              alt="App Store"
+              class="h-10 w-auto"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Copyright & Social Icons -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center text-sm mt-10 border-t border-gray-700 pt-4 text-center md:text-left"
+      >
+        <p class="mb-4 md:mb-0">
+          Copyright &copy; 2021, Carmel Public School |
+          <a href="#" class="text-blue-400 hover:underline"
+            >Website Developer: Webmad</a
+          >
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" ><img src="./assets/images/facebook.png" alt="fb"> </a>
+          <a href="#" ><img src="./assets/images/mail.png" alt=""></a>
+          <a href="#" ><img src="./assets/images/linkedin.png" alt="in"></a>
+          <a href="#" ><img src="./assets/images/skype.png" alt="skype"></a>
+          <a href="#" ><img src="./assets/images/twitter.png" alt="twitter"></a>
+          <a href="#" ><img src="./assets/images/instagram.png" alt="insta"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+      
+    <!--Footer ends  -->
+    <!-- ============================================================================================================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      duration: 1000, // Animation duration in ms
+      easing: "ease-out", // Easing effect
+      once: false, // Animate only once
+  });
+</script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

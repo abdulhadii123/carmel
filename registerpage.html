@@ -1,0 +1,467 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="path-to-your-flaticon.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <title>Carmel</title>
+  </head>
+  <body>
+    <header
+      class="bg-white wrapper"
+      data-aos="fade-in"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <div class="flex items-center w-[58px]">
+          <img src="./assets/images/CHS.png" alt="Logo" class="width-100%" />
+        </div>
+
+        <!-- Navigation Links -->
+        <nav id="nav-links" class="hidden md:flex space-x-6">
+            <a href="./index.html" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+            <a href="./aboutpage.html" class="nav-link text-gray-700 hover:text-blue-600">About Carmel Run</a>
+            <a href="#" class="nav-link text-gray-700 hover:text-blue-600">Rules & Route Map</a>
+            <a href="#" class="nav-link text-gray-700 hover:text-blue-600">Result</a>
+          </nav>
+
+        <!-- Register Button -->
+        <div>
+          <a
+            href="/registerpage.html"
+            class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-orange-600 transition"
+            >Register Now</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden md:hidden bg-white p-4">
+        <a href="#" class="block py-2 text-blue-600">Home</a>
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
+          >About Carmel run</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Rules & Root map</a
+        >
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
+          >Result</a
+        >
+      </nav>
+    </header>
+    <!-- Header ends -->
+
+    <!-- ============================================================================================================ -->
+
+    <!-- Registration begins -->
+    <section class="py-12" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+      <div class="wrapper">
+        <div class="main">
+          <h1 class="text-[40px] font-[600] mb-[10px]">
+            📋 Carmel Run 2025 – Registration
+          </h1>
+          <p class="text-[#6D6D6D] text-[20px]">
+            🏃‍♂️ Secure your spot & join the movement!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Registration ends -->
+
+    <!-- ================================================================================================================== -->
+
+    <!-- Events & Fees begins -->
+    <section class="py-12 bg-[#F9F9F9]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+      <div class="wrapper">
+        <div class="main">
+          <h1 class="text-[40px] font-[600] mb-[10px] text-center">
+            🎟 Event Categories & Fees
+          </h1>
+          <p class="text-[#6D6D6D] text-[20px] text-center">
+            Choose your race category & enjoy exclusive benefits!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Events & Fees ends  -->
+
+    <!-- ===================================================================================================================== -->
+    <!-- Table begins -->
+    <section class="py-10 bg-[#F9F9F9]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+      <div class="wrapper">
+        <!-- Table -->
+        <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-gray-200 border-b border-gray-300">
+                  <th
+                    class="py-3 px-4 text-[#212121] font-semibold border-r border-gray-300 text-sm md:text-base"
+                  >
+                    Category
+                  </th>
+                  <th
+                    class="py-3 px-4 text-[#212121] font-semibold border-r border-gray-300 text-sm md:text-base"
+                  >
+                    Registration Fee
+                  </th>
+                  <th
+                    class="py-3 px-4 text-[#212121] font-semibold text-sm md:text-base"
+                  >
+                    Includes
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-300">
+                <tr>
+                  <td
+                    class="py-3 px-4 flex items-center border-r border-gray-300 text-sm md:text-base text-[#6D6D6D]"
+                  >
+                    <span class="mr-2">🏃‍♂️</span>3KM Fun Run
+                  </td>
+                  <td
+                    class="py-3 px-4 border-r border-gray-300 text-sm md:text-base text-[#6D6D6D]"
+                  >
+                    ₹499
+                  </td>
+                  <td class="py-3 px-4 text-sm md:text-base text-[#6D6D6D]">
+                    T-shirt, E-Certificate, Breakfast, Medical Support
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="py-3 px-4 flex items-center border-r border-gray-300 text-sm md:text-base text-[#6D6D6D]"
+                  >
+                    <span class="mr-2">🎓</span>Student 5KM
+                  </td>
+                  <td
+                    class="py-3 px-4 border-r border-gray-300 text-sm md:text-base text-[#6D6D6D]"
+                  >
+                    ₹699
+                  </td>
+                  <td class="py-3 px-4 text-sm md:text-base text-[#6D6D6D]">
+                    T-shirt, Timed Bib, Medal, Breakfast, Medical Support
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="py-3 px-4 flex items-center border-r border-gray-300 text-sm md:text-base text-[#6D6D6D]"
+                  >
+                    <span class="mr-2">🎓</span>Student 10KM
+                  </td>
+                  <td
+                    class="py-3 px-4 border-r border-gray-300 text-sm md:text-base text-[#6D6D6D]"
+                  >
+                    ₹799
+                  </td>
+                  <td class="py-3 px-4 text-sm md:text-base text-[#6D6D6D]">
+                    T-shirt, Timed Bib, Medal, Breakfast, Medical Support
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Note Section -->
+        <div class="text-center text-xs md:text-sm py-8">
+          <p class="flex items-center justify-center text-[#6D6D6D]">
+            <span class="mr-2">🎁</span> Goodies & vouchers for winners (No cash
+            prizes in adult categories)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Table ends  -->
+
+    <!-- ========================================================================================================== -->
+
+    <!-- Form begins -->
+    <section class="py-16 " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+        <div class="wrapper">
+          <div class="main w-full flex flex-col lg:flex-row justify-between items-center gap-10">
+            
+            <!-- Left: Form -->
+            <div class="left w-full lg:w-[49%] bg-white p-6 shadow-md rounded-lg">
+              <h2 class="text-2xl font-semibold mb-6">Registration Form</h2>
+      
+              <!-- Form Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-700">Name</label>
+                  <input type="text" placeholder="Full Name" class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500" />
+                </div>
+                <div>
+                  <label class="block text-gray-700">Phone Number</label>
+                  <input type="text" placeholder="+91" class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500" />
+                </div>
+                <div>
+                  <label class="block text-gray-700">Email</label>
+                  <input type="email" placeholder="john@gmail.com" class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500" />
+                </div>
+                <div>
+                  <label class="block text-gray-700">Date of Birth</label>
+                  <input type="text" placeholder="00/00/0000" class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500" />
+                </div>
+                <div>
+                  <label class="block text-gray-700">Gender</label>
+                  <select class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500">
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-gray-700">Category</label>
+                  <select class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500">
+                    <option>Select</option>
+                    <option>5KM</option>
+                    <option>10KM</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-gray-700">T-Shirt Size</label>
+                  <select class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500">
+                    <option>Select</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-gray-700">Bib Collection Point</label>
+                  <select class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500">
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-gray-700">Date of Registration</label>
+                  <input type="text" value="Automatically fetched from date of registration" class="w-full px-4 py-2 border rounded-lg bg-gray-100 text-[#969696]" readonly />
+                </div>
+                <div>
+                  <label class="block text-gray-700">Amount Paid</label>
+                  <input type="text" value="Automatically fetched from the payment source" class="w-full px-4 py-2 border rounded-lg bg-gray-100 text-[#969696]" readonly />
+                </div>
+              </div>
+      
+              <!-- Student Entries Section -->
+              <div class="mt-6">
+                <div id="student-container"></div>
+              </div>
+      
+              <!-- Buttons -->
+              <div class="mt-6 flex flex-wrap gap-4">
+               <a href="/confirmpage.html"><button class="px-6 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600">
+                Register Now
+              </button></a> 
+                <button type="button" onclick="addStudentField()" class="px-6 py-2 bg-gray-200 font-semibold rounded-lg hover:bg-gray-300">
+                  Register More +
+                </button>
+              </div>
+            </div>
+      
+            <!-- Right: Image -->
+            <div class="right w-full lg:w-[49%] flex justify-center">
+              <div class="image w-full">
+                <img src="./assets/images/form-image.png" alt="Form Image" class="w-full lg:h-[600px] rounded-lg shadow-md">
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+    <!-- Form ends -->
+
+    <!-- =================================================================================================================== -->
+
+    <!-- Footer begins -->
+    <footer
+      class="bg-gray-900 text-white py-10"
+      data-aos="fade"
+      data-aos-delay="100"
+      data-aos-offset="200"
+    >
+      <div class="wrapper">
+        <!-- Logo & School Name -->
+        <div
+          class="flex flex-col md:flex-row justify-center items-center mb-10 gap-6"
+        >
+          <div class="w-24 flex-shrink-0">
+            <img src="./assets/images/CHS.png" alt="Carmel High School Logo" />
+          </div>
+          <div class="text-center md:text-left">
+            <h2 class="text-xl font-semibold text-[#396DB2]">
+              CARMEL HIGH SCHOOL
+            </h2>
+            <p class="text-[16px] text-white">BASAVESHWARANAGAR, BANGALORE</p>
+          </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+        >
+          <!-- Contact Section -->
+          <div class="text-white">
+            <h3 class="text-lg font-semibold text-white">Contact</h3>
+            <hr class="w-full my-2 border border-[#396DB2]" />
+            <p
+              class="text-[16px] flex items-center justify-center md:justify-start text-white"
+            >
+              📍 2nd Block, 3rd Stage, Judges' Colony, <br />
+              West of Chord Road, Basaveshwaranagar, Bangalore 560 079.
+            </p>
+            <p
+              class="text-[16px] mt-2 flex items-center justify-center md:justify-start text-white"
+            >
+              <a href="tel:080-23227015">📞 080-23227015</a>
+            </p>
+            <p
+              class="text-[16px] mt-2 flex items-center justify-center md:justify-start text-white"
+            >
+              <a href="mailto: info@carmelhighschool.org"
+                >✉️ info@carmelhighschool.org</a
+              >
+            </p>
+          </div>
+
+          <!-- About Section -->
+          <div>
+            <h3 class="text-lg font-semibold text-white">About</h3>
+            <hr class="w-full my-2 border border-[#396DB2]" />
+            <p class="text-[16px] text-white">
+              Carmel School is a learning community of excellence, enabling
+              students of different language abilities to become independent
+              learners and effective communicators.
+            </p>
+          </div>
+
+          <!-- Get Into Section -->
+          <div>
+            <h3 class="text-lg font-semibold text-white">Get Into</h3>
+            <hr class="w-full my-2 border border-[#396DB2]" />
+            <ul class="text-sm space-y-1">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-gray-200 text-[16px]"
+                  >Welcome To Carmel</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-gray-200 text-[16px]"
+                  >Carmel Family</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-gray-200 text-[16px]"
+                  >Admission Overview</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-gray-200 text-[16px]"
+                  >Campus Tour</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-gray-200 text-[16px]"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- App Download Section -->
+        <div class="text-center mt-10">
+          <h3 class="text-lg font-semibold text-white">Get Carmel 360 on:</h3>
+          <div class="flex justify-center gap-4 mt-3">
+            <a href="#"
+              ><img
+                src="./assets/images/GooglePlay.png"
+                alt="Google Play"
+                class="h-10 w-auto"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/images/AppStore.png"
+                alt="App Store"
+                class="h-10 w-auto"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Copyright & Social Icons -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center text-sm mt-10 border-t border-gray-700 pt-4 text-center md:text-left"
+        >
+          <p class="mb-4 md:mb-0">
+            Copyright &copy; 2021, Carmel Public School |
+            <a href="#" class="text-blue-400 hover:underline"
+              >Website Developer: Webmad</a
+            >
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" ><img src="./assets/images/facebook.png" alt="fb"> </a>
+            <a href="#" ><img src="./assets/images/mail.png" alt=""></a>
+            <a href="#" ><img src="./assets/images/linkedin.png" alt="in"></a>
+            <a href="#" ><img src="./assets/images/skype.png" alt="skype"></a>
+            <a href="#" ><img src="./assets/images/twitter.png" alt="twitter"></a>
+            <a href="#" ><img src="./assets/images/instagram.png" alt="insta"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer ends  -->
+
+    <!-- ============================================================================================= -->
+  </body>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      easing: "ease-out", // Easing effect
+      once: false, // Animate only once
+    });
+  </script>
+</html>
