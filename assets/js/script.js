@@ -2,25 +2,27 @@
 
 // Toggle Mobile Menu
 document.getElementById("menu-toggle").addEventListener("click", function () {
-  document.getElementById("mobile-menu").classList.toggle("hidden");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Get current page URL
-  const currentPage = window.location.pathname;
-
-  // Select all navigation links
-  const navLinks = document.querySelectorAll("#nav-links .nav-link");
-
-  // Loop through links and add "active" class if URL matches
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("text-black-600", "font-bold"); // Active link styles
-    } else {
-      link.classList.remove("text-blue-600"); // Remove active class if not active
-    }
+    document.getElementById("mobile-menu").classList.toggle("hidden");
   });
-});
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname; // Get the current page URL
+  
+    // Select all navigation links (desktop and mobile)
+    const navLinks = document.querySelectorAll(".nav-link, #mobile-menu a");
+  
+    navLinks.forEach((link) => {
+      const linkHref = link.getAttribute("href").replace("./", ""); // Normalize href
+  
+      // If the current page matches the link, add active styles
+      if (currentPage.endsWith(linkHref) || (currentPage === "/" && linkHref === "index.html")) {
+        link.classList.add("text-blue-600", "font-bold");
+      } else {
+        link.classList.remove("text-blue-600", "font-bold");
+      }
+    });
+  });
+  
 
 //   slider section
 var swiper = new Swiper(".mySwiper", {
