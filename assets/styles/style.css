@@ -84,7 +84,7 @@
     background-color: #e5e7eb; /* Light gray dot */
     border-radius: 50%; /* Circular dot */
     border: 2px solid #f97316; /* Orange border */
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .owl-dot.active {

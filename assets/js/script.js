@@ -123,8 +123,8 @@ function updateDots() {
     });
 }
 
-// Auto-slide every 3 seconds
-setInterval(slideNext, 3000);
+// Auto-slide every 5 seconds
+setInterval(slideNext, 5000);
 
 // Handle manual dot navigation
 dots.forEach((dot, i) => {
