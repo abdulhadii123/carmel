@@ -37,7 +37,7 @@ var swiper = new Swiper(".mySwiper", {
     480: { slidesPerView: 1 }, // Mobile: 1 card
     768: { slidesPerView: 2 }, // Tablet: 2 cards
     1024: { slidesPerView: 3 }, // Small laptops: 3 cards
-    1280: { slidesPerView: 4 }, // Larger screens: 5 cards
+    1280: { slidesPerView: 4.5 }, // Larger screens: 5 cards
   },
 });
 
