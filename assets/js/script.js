@@ -25,11 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
 //   slider section
 var swiper = new Swiper(".mySwiper", {
   loop: true,
-
   slidesPerView: 1,
   spaceBetween: 15,
   slidesPerGroup: 1,
-
   loopFillGroupWithBlank: false,
   navigation: {
     nextEl: ".swiper-button-next",

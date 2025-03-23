@@ -23,6 +23,6 @@
     color: black !important;
 }
 .card {
-    width: 250px; /* Fixed width */
-    height: 250px; /* Fixed height */
+    width: 250px !important; /* Fixed width */
+    height: 270px; /* Fixed height */
 }
