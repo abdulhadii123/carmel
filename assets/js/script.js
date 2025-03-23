@@ -75,3 +75,118 @@ function removeStudentField(button) {
     ).disabled = false;
   }
 }
+
+
+
+
+
+
+// ===================================================================================================================
+
+
+
+
+
+
+const sliderTrack = document.getElementById('slider-track');
+const dots = document.querySelectorAll('.dot');
+
+let index = 0; // Slide index
+const totalSlides = dots.length; // Number of actual images (not including clone)
+
+// Function to handle sliding
+function slideNext() {
+    index++;
+
+    // Apply transition for smooth animation
+    sliderTrack.style.transition = 'transform 0.5s ease-in-out';
+
+    // Translate the slider based on current index
+    sliderTrack.style.transform = `translateX(-${index * 100}%)`;
+
+    // Loop back to the start (without animation) after the clone
+    if (index === totalSlides) {
+        setTimeout(() => {
+            sliderTrack.style.transition = 'none'; // Turn off animation
+            index = 0; // Reset index
+            sliderTrack.style.transform = `translateX(0%)`; // Move back to the first image
+        }, 500); // Wait for the transition to finish
+    }
+
+    updateDots();
+}
+
+function updateDots() {
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-blue-500', i === index % totalSlides);
+        dot.classList.toggle('bg-gray-300', i !== index % totalSlides);
+    });
+}
+
+// Auto-slide every 3 seconds
+setInterval(slideNext, 3000);
+
+// Handle manual dot navigation
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+        index = i;
+        sliderTrack.style.transition = 'transform 0.5s ease-in-out';
+        sliderTrack.style.transform = `translateX(-${index * 100}%)`;
+        updateDots();
+    });
+});
+
+// Initialize dots on page load
+updateDots();
+
+// Sample data array for race results (to make it dynamic)
+const raceResults = [
+    { position: 1, name: "Rahul Sharma", category: "Adult 10KM", timing: "38:20 min" },
+    { position: 2, name: "Ananya Ramesh", category: "Student 5KM", timing: "24:15 min" },
+    { position: 3, name: "Vikram Das", category: "Adult 5KM", timing: "26:30 min" },
+    { position: 4, name: "Sneha Nair", category: "Student 5KM", timing: "28:50 min" },
+];
+
+// DOM elements
+const searchInput = document.getElementById("search-input");
+const resultsTable = document.getElementById("results-table");
+
+// Function to render filtered results
+function renderTable(data) {
+    resultsTable.innerHTML = ""; // Clear previous results
+    data.forEach((result) => {
+        const row = document.createElement("tr");
+        row.className = "border-t hover:bg-gray-100";
+        row.innerHTML = `
+            <td class="py-3 px-4">${result.position}</td>
+            <td class="py-3 px-4">${result.name}</td>
+            <td class="py-3 px-4">${result.category}</td>
+            <td class="py-3 px-4">${result.timing}</td>
+        `;
+        resultsTable.appendChild(row);
+    });
+}
+
+// Initial render
+renderTable(raceResults);
+
+// Filter function (on typing in the search input)
+searchInput.addEventListener("input", () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredResults = raceResults.filter((result) =>
+        result.name.toLowerCase().includes(searchTerm)
+    );
+    renderTable(filteredResults);
+});
+
+
+// JavaScript to handle input or button interactions if needed.
+document.querySelector('button').addEventListener('click', () => {
+    const input = document.querySelector('input').value;
+    if (input) {
+        alert(`Downloading certificate for Bib Number: ${input}`);
+        // Code to download the certificate can be added here
+    } else {
+        alert('Please enter your Bib Number.');
+    }
+});
