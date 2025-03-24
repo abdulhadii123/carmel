@@ -15,6 +15,23 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
     }
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname; // Get the current page URL
+  
+    // Select all navigation links (desktop and mobile)
+    const navLinks = document.querySelectorAll(".nav-link, #mobile-menu a");
+  
+    navLinks.forEach((link) => {
+      const linkHref = link.getAttribute("href").replace("./", ""); // Normalize href
+  
+      // If the current page matches the link, add active styles
+      if (currentPage.endsWith(linkHref) || (currentPage === "/" && linkHref === "index.html")) {
+        link.classList.add("text-blue-600", "font-bold"); // Active state
+      } else {
+        link.classList.remove("text-blue-600", "font-bold");
+      }
+    });
+  });
 
 //   slider section
 var swiper = new Swiper(".mySwiper", {
