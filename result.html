@@ -98,7 +98,7 @@
     <!-- Header ends -->
 <!-- ================================================================================================================================ -->
  <!-- breadcrumb  -->
- <section id="breadcrumb" class="py-10 md:py-16" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+ <section id="breadcrumb" class="py-8 md:py-16" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
   <div class="wrapper">
     <div class="container flex flex-col md:flex-row justify-between items-center text-center md:text-left">
       
@@ -118,7 +118,7 @@
 
   <!-- breadcrumb ends -->
    <!-- breadcrumb  -->
-   <section id="breadcrumb" class="py-10 md:py-16 bg-[#F9F9F9]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+   <section id="breadcrumb" class="py-8 md:py-16 bg-[#F9F9F9]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
     <div class="wrapper ">
       <div class="py-4 md:py-6">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -191,7 +191,7 @@
   
   <!-- breadcrumb ends -->
  <!-- breadcrumb  -->
- <section id="breadcrumb" class="py-12 md:py-16" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+ <section id="breadcrumb" class="py-8 md:py-16" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
   <div class="wrapper">
     <div class="container flex justify-center">
       <div class="w-full py-6 md:py-8 bg-white rounded-lg ">
@@ -228,9 +228,9 @@
 
   <!-- breadcrumb ends -->
     <!-- breadcrumb  -->
- <section id="breadcrumb" class="py-16" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+ <section id="breadcrumb" class=" py-8 md:py-16" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
     <div class="wrapper">
-        <div class="max-w-7xl mx-auto px-4">
+        <div class="container">
             <h2 class="text-3xl font-bold text-center mb-4">🏁 Previous Year Winners Gallery</h2>
             <p class="text-center text-gray-600 mb-8">📸 Celebrating the champions of Carmel Run 2024!</p>
     
@@ -436,21 +436,23 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
      <script src="./assets/js/script.js"></script>
      <script>
-        $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 16,
-            nav: false,  // Ensure nav is disabled (only dots will appear)
-            dots: true,  // Enable dots!
-            autoplay: true,
-            autoplayTimeout: 3000,
-            responsive: {
-                0: { items: 1 },
-                768: { items: 2 },
-                1024: { items: 4 }
-            }
-        });
+     $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 16,
+        nav: false,  // Hide navigation arrows
+        dots: true,  // Show dots
+        dotsEach: 1, // Show dots per slide instead of per group
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: { items: 1 },  // Mobile: Show 1 item per slide
+            768: { items: 2 }, // Tablet: Show 2 items per slide
+            1024: { items: 4 } // Desktop: Show 3 items per slide
+        }
     });
+});
+
     </script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
