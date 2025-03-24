@@ -1,26 +1,18 @@
 /** @format */
 
-// Toggle Mobile Menu
 document.getElementById("menu-toggle").addEventListener("click", function () {
-    document.getElementById("mobile-menu").classList.toggle("hidden");
-  });
+    const mobileMenu = document.getElementById("mobile-menu");
   
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname; // Get the current page URL
-  
-    // Select all navigation links (desktop and mobile)
-    const navLinks = document.querySelectorAll(".nav-link, #mobile-menu a");
-  
-    navLinks.forEach((link) => {
-      const linkHref = link.getAttribute("href").replace("./", ""); // Normalize href
-  
-      // If the current page matches the link, add active styles
-      if (currentPage.endsWith(linkHref) || (currentPage === "/" && linkHref === "index.html")) {
-        link.classList.add("text-blue-600", "font-bold");
-      } else {
-        link.classList.remove("text-blue-600", "font-bold");
-      }
-    });
+    if (mobileMenu.classList.contains("opacity-0")) {
+      mobileMenu.classList.remove("opacity-0", "invisible");
+      mobileMenu.classList.add("opacity-100");
+    } else {
+      mobileMenu.classList.remove("opacity-100");
+      mobileMenu.classList.add("opacity-0");
+      setTimeout(() => {
+        mobileMenu.classList.add("invisible");
+      }, 300); // Delay should match transition duration
+    }
   });
   
 
