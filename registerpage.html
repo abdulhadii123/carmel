@@ -19,82 +19,61 @@
   </head>
   <body>
     <header
-      class="bg-white wrapper"
-      data-aos="fade-in"
-      data-aos-delay="300"
-      data-aos-duration="1000"
-    >
-      <div class="container flex justify-between items-center p-4">
-        <!-- Logo -->
-        <div class="flex items-center w-[58px]">
-            <a href="./index.html">  <img src="./assets/images/CHS.png" alt="Logo" /> </a>
-        </div>
-
-        <!-- Navigation Links -->
-        <nav id="nav-links" class="hidden md:flex space-x-6">
-          <a
-            href="./index.html"
-            class="nav-link text-gray-700 hover:text-blue-600"
-            >Home</a
-          >
-          <a
-            href="./aboutpage.html"
-            class="nav-link text-gray-700 hover:text-blue-600"
-            >About Carmel Run</a
-          >
-          <a href="./rulesrootmap.html" class="nav-link text-gray-700 hover:text-blue-600"
-            >Rules & Route Map</a
-          >
-          <a href="./result.html" class="nav-link text-gray-700 hover:text-blue-600"
-            >Result</a
-          >
-        </nav>
-
-        <!-- Register Button -->
-        <div>
-          <a
-            href="/registerpage.html"
-            class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-orange-600 transition"
-            >Register Now</a
-          >
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="md:hidden focus:outline-none">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
+    class="bg-white fixed top-0 right-0 left-0 wrapper z-50 shadow-md"
+    data-aos="fade-in"
+    data-aos-delay="300"
+    data-aos-duration="1000"
+  >
+    <div class="container flex justify-between items-center p-4">
+      <!-- Logo -->
+      <div class="flex items-center w-[58px]">
+        <a href="./index.html">
+          <img src="./assets/images/CHS.png" alt="Logo" />
+        </a>
       </div>
-
-      <!-- Mobile Menu -->
-      <nav
-      id="mobile-menu"
-      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden"
-    >
+  
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="hidden md:flex space-x-6">
+        <a href="./index.html" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+        <a href="./aboutpage.html" class="nav-link text-gray-700 hover:text-blue-600">About Carmel Run</a>
+        <a href="./rulesrootmap.html" class="nav-link text-gray-700 hover:text-blue-600">Rules & Route Map</a>
+        <a href="./result.html" class="nav-link text-gray-700 hover:text-blue-600">Result</a>
+      </nav>
+  
+      <!-- Register Button -->
+      <div>
+        <a href="/registerpage.html"
+          class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-orange-600 transition">
+          Register Now
+        </a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu"
+      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden">
       <a href="./index.html" class="block py-2 text-blue-600">Home</a>
-      <a href="./aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600">
-        About Carmel Run
-      </a>
-      <a href="./rulesrootmap.html" class="block py-2 text-gray-700 hover:text-blue-600">
-        Rules & Route Map
-      </a>
-      <a href="./result.html" class="block py-2 text-gray-700 hover:text-blue-600">
-        Result
-      </a>
+      <a href="./aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600">About Carmel Run</a>
+      <a href="./rulesrootmap.html" class="block py-2 text-gray-700 hover:text-blue-600">Rules & Route Map</a>
+      <a href="./result.html" class="block py-2 text-gray-700 hover:text-blue-600">Result</a>
     </nav>
-    </header>
+  </header>
+  
+  <!-- Add margin to body to prevent content from hiding behind fixed header -->
+  <style>
+    body {
+      padding-top: 70px; /* Adjust based on header height */
+    }
+  </style>
+  
     <!-- Header ends -->
 
     <!-- ============================================================================================================ -->
@@ -321,6 +300,10 @@
     <!-- Form ends -->
 
     <!-- =================================================================================================================== -->
+       <!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="hidden fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition">
+    ⬆ 
+</button>
 
     <!-- Footer begins -->
     <footer
@@ -471,15 +454,36 @@
     <!--Footer ends  -->
 
     <!-- ============================================================================================= -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in ms
+        easing: "ease-out", // Easing effect
+        once: false, // Animate only once
+      });
+    </script>
+          <script>
+              const scrollToTopBtn = document.getElementById("scrollToTop");
+      
+              // Show the button when scrolling down
+              window.addEventListener("scroll", function () {
+                  if (window.scrollY > 300) {
+                      scrollToTopBtn.classList.remove("hidden");
+                  } else {
+                      scrollToTopBtn.classList.add("hidden");
+                  }
+              });
+      
+              // Scroll to top smoothly
+              scrollToTopBtn.addEventListener("click", function () {
+                  window.scrollTo({
+                      top: 0,
+                      behavior: "smooth"
+                  });
+              });
+          </script>
   </body>
-  <script src="./assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // Animation duration in ms
-      easing: "ease-out", // Easing effect
-      once: false, // Animate only once
-    });
-  </script>
+  
 </html>

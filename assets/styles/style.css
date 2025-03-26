@@ -84,3 +84,30 @@
     margin: 0 5px; /* Add spacing between dots */
 }
 
+
+
+
+
+
+
+
+.flip-container {
+    perspective: 1000px;
+}
+
+.flip-card {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+input:checked + .flip-card {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    backface-visibility: hidden;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}

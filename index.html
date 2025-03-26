@@ -21,83 +21,53 @@
   </head>
   <body>
     <header
-      class="bg-white wrapper"
-      data-aos="fade-in"
-      data-aos-delay="300"
-      data-aos-duration="1000"
-    >
-      <div class="container flex justify-between items-center p-4">
-        <!-- Logo -->
-        <div class="flex items-center w-[58px]">
-          <a href="./index.html">  <img src="./assets/images/CHS.png" alt="Logo" /> </a>
-        </div>
-
-        <!-- Navigation Links -->
-        <nav id="nav-links" class="hidden md:flex space-x-6">
-          <a
-            href="./index.html"
-            class="nav-link text-gray-700 hover:text-blue-600"
-            >Home</a
-          >
-          <a
-            href="./aboutpage.html"
-            class="nav-link text-gray-700 hover:text-blue-600"
-            >About Carmel Run</a
-          >
-          <a href="./rulesrootmap.html" class="nav-link text-gray-700 hover:text-blue-600"
-            >Rules & Route Map</a
-          >
-          <a href="./result.html" class="nav-link text-gray-700 hover:text-blue-600"
-            >Result</a
-          >
-        </nav>
-
-        <!-- Register Button -->
-        <div>
-          <a
-            href="/registerpage.html"
-            class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-orange-600 transition"
-            >Register Now</a
-          >
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="md:hidden focus:outline-none">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
+    class="bg-white fixed top-0 right-0 left-0 wrapper z-50 shadow-md "
+    data-aos="fade-in"
+    data-aos-delay="300"
+    data-aos-duration="1000"
+  >
+    <div class="container flex justify-between items-center p-4">
+      <!-- Logo -->
+      <div class="flex items-center w-[58px]">
+        <a href="./index.html">
+          <img src="./assets/images/CHS.png" alt="Logo" />
+        </a>
       </div>
-
-      <!-- Mobile Menu -->
-      <nav
-      id="mobile-menu"
-      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden"
-    >
+  
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="hidden md:flex space-x-6">
+        <a href="./index.html" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+        <a href="./aboutpage.html" class="nav-link text-gray-700 hover:text-blue-600">About Carmel Run</a>
+        <a href="./rulesrootmap.html" class="nav-link text-gray-700 hover:text-blue-600">Rules & Route Map</a>
+        <a href="./result.html" class="nav-link text-gray-700 hover:text-blue-600">Result</a>
+      </nav>
+  
+      <!-- Register Button -->
+      <div>
+        <a href="/registerpage.html"
+          class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-orange-600 transition">
+          Register Now
+        </a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu"
+      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden">
       <a href="./index.html" class="block py-2 text-blue-600">Home</a>
-      <a href="./aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600">
-        About Carmel Run
-      </a>
-      <a href="./rulesrootmap.html" class="block py-2 text-gray-700 hover:text-blue-600">
-        Rules & Route Map
-      </a>
-      <a href="./result.html" class="block py-2 text-gray-700 hover:text-blue-600">
-        Result
-      </a>
+      <a href="./aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600">About Carmel Run</a>
+      <a href="./rulesrootmap.html" class="block py-2 text-gray-700 hover:text-blue-600">Rules & Route Map</a>
+      <a href="./result.html" class="block py-2 text-gray-700 hover:text-blue-600">Result</a>
     </nav>
-    
-    </header>
+  </header>
     <!-- Header ends -->
     <!-- ================================================================================================================================ -->
     <!-- Spotlight begin -->
@@ -106,10 +76,10 @@
   data-aos="fade-in"
   data-aos-delay="300"
   data-aos-duration="1000"
-  class="flex justify-center py-10 w-full"
+  class="flex justify-center pb-10 w-full pt-[160px]"
 >
   <div
-    class="relative wrapper h-[250px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden bg-cover bg-center"
+    class="relative wrapper h-[250px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden bg-cover bg-center "
     style="background-image: url('./assets/images/spot.png');"
   >
     <!-- Overlay -->
@@ -261,146 +231,117 @@
     <!-- About ends -->
     <!-- ============================================================================================================================= -->
     <!-- Category begins -->
-    <section
-      class="w-full bg-[#F9F9F9] py-12 md:py-24"
-      data-aos="fade-up"
-      data-aos-delay="300"
-      data-aos-offset="200"
-    >
-      <h2
-        class="text-2xl md:text-3xl font-bold mb-6 ml-[55px] text-left wrapper"
-      >
-        Category Details
-      </h2>
-
-      <div class="relative">
-        <!-- Swiper Container -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper w-full mb-10 md:pl-[110px] pl-0">
-            <!-- Card Items -->
-            <div class="swiper-slide flex justify-center">
-              <div
-                class="card bg-orange-500 text-white p-6 rounded-2xl shadow-lg flex flex-col w-full max-w-sm md:max-w-md"
-              >
-                <h3 class="font-bold text-lg mb-[28px]">3KM FUN RUN</h3>
-                <p class="text-lg">
-                  Event T-shirt, E-Certificate, breakfast, safety & medical
-                  support.
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide flex justify-center">
-              <div
-                class="card bg-cyan-500 text-white p-6 rounded-2xl shadow-lg flex flex-col w-full max-w-sm md:max-w-md"
-              >
-                <h3 class="font-bold text-lg mb-[28px]">Student 5KM</h3>
-                <p class="text-lg">
-                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
-                  Medical Support.
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide flex justify-center">
-              <div
-                class="card bg-lime-500 text-white p-6 rounded-2xl shadow-lg flex flex-col w-full max-w-sm md:max-w-md"
-              >
-                <h3 class="font-bold text-lg mb-[28px]">Student 10KM</h3>
-                <p class="text-lg">
-                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
-                  Medical Support.
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide flex justify-center">
-              <div
-                class="card bg-teal-400 text-white p-6 rounded-2xl shadow-lg flex flex-col w-full max-w-sm md:max-w-md"
-              >
-                <h3 class="font-bold text-lg mb-[28px]">Adult 5KM</h3>
-                <p class="text-lg">
-                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
-                  Medical Support.
-                </p>
-                <p class="text-sm mt-2">
-                  No cash prize. Winners receive goodies & vouchers.
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide flex justify-center">
-              <div
-                class="card bg-yellow-500 text-black p-6 rounded-2xl shadow-lg flex flex-col w-full max-w-sm md:max-w-md"
-              >
-                <h3 class="font-bold text-lg mb-[28px]">Adult 10KM</h3>
-                <p class="text-lg">
-                  Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety &
-                  Medical Support.
-                </p>
-                <p class="text-sm mt-2">
-                  No cash prize. Winners receive goodies & vouchers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navigation Buttons -->
-        <div
-          class="absolute bottom-[-35] right-[52px] flex justify-center gap-6 p-4"
-        >
-          <button class="w-full">
-            <svg
-              class="swiper-button-prev left-[-20px]"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="1"
-                y="1"
-                width="38"
-                height="38"
-                rx="19"
-                stroke="#373737"
-                stroke-width="2"
-              />
-              <path
-                d="M26.6667 20.832C27.1269 20.832 27.5 20.4589 27.5 19.9987C27.5 19.5384 27.1269 19.1654 26.6667 19.1654H15.3452L19.7559 14.7546C20.0813 14.4292 20.0813 13.9015 19.7559 13.5761C19.4305 13.2507 18.9028 13.2507 18.5774 13.5761L12.7442 19.4094C12.4187 19.7349 12.4187 20.2625 12.7442 20.5879L18.5774 26.4213C18.9028 26.7467 19.4305 26.7467 19.7559 26.4213C20.0813 26.0959 20.0813 25.5682 19.7559 25.2428L15.3452 20.832H26.6667Z"
-                fill="#373737"
-              />
-            </svg>
-          </button>
-          <button class="w-full">
-            <svg
-              class="swiper-button-next"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="1"
-                y="1"
-                width="38"
-                height="38"
-                rx="19"
-                stroke="#373737"
-                stroke-width="2"
-              />
-              <path
-                d="M13.3333 19.168C12.8731 19.168 12.5 19.5411 12.5 20.0013C12.5 20.4616 12.8731 20.8346 13.3333 20.8346H24.6548L20.2441 25.2454C19.9187 25.5708 19.9187 26.0985 20.2441 26.4239C20.5695 26.7493 21.0972 26.7493 21.4226 26.4239L27.2558 20.5906C27.5813 20.2651 27.5813 19.7375 27.2558 19.4121L21.4226 13.5787C21.0972 13.2533 20.5695 13.2533 20.2441 13.5787C19.9187 13.9041 19.9187 14.4318 20.2441 14.7572L24.6548 19.168H13.3333Z"
-                fill="#373737"
-              />
-            </svg>
-          </button>
+    <section class="">
+      <div class="wrapper">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <!-- Front Side -->
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?nature" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Back Side -->
+                    <div class="flip-back absolute w-full h-full bg-blue-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 1</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 2 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?water" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-green-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 2</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 3 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?mountain" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-red-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 3</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 4 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?city" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-purple-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 4</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 5 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?forest" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-yellow-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 5</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 6 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?ocean" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-orange-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 6</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 7 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?space" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-pink-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 7</p>
+                    </div>
+                </div>
+            </label>
+      
+            <!-- Card 8 -->
+            <label class="flip-container relative w-64 h-40 cursor-pointer">
+                <input type="checkbox" class="hidden peer">
+                <div class="flip-card absolute w-full h-full">
+                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://source.unsplash.com/300x200/?desert" alt="Front Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flip-back absolute w-full h-full bg-gray-700 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
+                        <p>Content for Card 8</p>
+                    </div>
+                </div>
+            </label>
         </div>
       </div>
-    </section>
+      </section>
     <!-- Category ends -->
     <!-- ==================================================================================================================== -->
 
@@ -426,6 +367,15 @@
         </button></a
       >
     </section>
+
+    
+
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="hidden fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition">
+      ⬆ 
+  </button>
+
 
     <!-- Result ends  -->
     <!-- ==================================================================================================================== -->
@@ -593,6 +543,26 @@
         once: false, // Animate only once
       });
     </script>
+        <script>
+          const scrollToTopBtn = document.getElementById("scrollToTop");
+  
+          // Show the button when scrolling down
+          window.addEventListener("scroll", function () {
+              if (window.scrollY > 300) {
+                  scrollToTopBtn.classList.remove("hidden");
+              } else {
+                  scrollToTopBtn.classList.add("hidden");
+              }
+          });
+  
+          // Scroll to top smoothly
+          scrollToTopBtn.addEventListener("click", function () {
+              window.scrollTo({
+                  top: 0,
+                  behavior: "smooth"
+              });
+          });
+      </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
