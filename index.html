@@ -17,98 +17,133 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <title>Carmel</title>
-    <link rel="icon" type="image/png" href="./assets/images/CHS.png">
+    <link rel="icon" type="image/png" href="./assets/images/CHS.png" />
   </head>
   <body>
     <header
-    class="bg-white fixed top-0 right-0 left-0 wrapper z-50 shadow-md "
-    data-aos="fade-in"
-    data-aos-delay="300"
-    data-aos-duration="1000"
-  >
-    <div class="container flex justify-between items-center p-4">
-      <!-- Logo -->
-      <div class="flex items-center w-[58px]">
-        <a href="./index.html">
-          <img src="./assets/images/CHS.png" alt="Logo" />
-        </a>
+      class="fixed top-0 right-0 left-0 wrapper z-50 shadow-md"
+      data-aos="fade-in"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
+      <div class="container flex justify-between items-center p-4">
+        <!-- Logo -->
+        <div class="flex items-center w-[58px]">
+          <a href="./index.html">
+            <img src="./assets/images/CHS.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav id="nav-links" class="hidden md:flex space-x-6">
+          <a href="./index.html" class="nav-link text-white hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="./aboutpage.html"
+            class="nav-link text-white hover:text-blue-600"
+            >Race</a
+          >
+          <a
+            href="./rulesrootmap.html"
+            class="nav-link text-white hover:text-blue-600"
+            >Rules</a
+          >
+          <a
+            href="./result.html"
+            class="nav-link text-white hover:text-blue-600"
+            >Result</a
+          >
+        </nav>
+
+        <!-- Register Button -->
+        <div>
+          <a
+            href="/registerpage.html"
+            class="bg-[#396DB2] text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-blue-600 transition"
+          >
+            Register Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="blue"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
       </div>
-  
-      <!-- Navigation Links -->
-      <nav id="nav-links" class="hidden md:flex space-x-6">
-        <a href="./index.html" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
-        <a href="./aboutpage.html" class="nav-link text-gray-700 hover:text-blue-600">About Carmel Run</a>
-        <a href="./rulesrootmap.html" class="nav-link text-gray-700 hover:text-blue-600">Rules & Route Map</a>
-        <a href="./result.html" class="nav-link text-gray-700 hover:text-blue-600">Result</a>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden"
+      >
+        <a href="./index.html" class="block py-2 text-blue-600">Home</a>
+        <a
+          href="./aboutpage.html"
+          class="block py-2 text-gray-700 hover:text-blue-600"
+          >Race</a
+        >
+        <a
+          href="./rulesrootmap.html"
+          class="block py-2 text-gray-700 hover:text-blue-600"
+          >Rules</a
+        >
+        <a
+          href="./result.html"
+          class="block py-2 text-gray-700 hover:text-blue-600"
+          >Result</a
+        >
       </nav>
-  
-      <!-- Register Button -->
-      <div>
-        <a href="/registerpage.html"
-          class="bg-[#396DB2] text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-blue-600 transition">
-          Register Now
-        </a>
-      </div>
-  
-      <!-- Mobile Menu Button -->
-      <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-    </div>
-  
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu"
-      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden">
-      <a href="./index.html" class="block py-2 text-blue-600">Home</a>
-      <a href="./aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600">About Carmel Run</a>
-      <a href="./rulesrootmap.html" class="block py-2 text-gray-700 hover:text-blue-600">Rules & Route Map</a>
-      <a href="./result.html" class="block py-2 text-gray-700 hover:text-blue-600">Result</a>
-    </nav>
-  </header>
+    </header>
     <!-- Header ends -->
     <!-- ================================================================================================================================ -->
     <!-- Spotlight begin -->
     <section
-  id="spotlight"
-  data-aos="fade-in"
-  data-aos-delay="300"
-  data-aos-duration="1000"
-  class="flex justify-center pb-10 w-full pt-[130px] md:pt-[160px]"
->
-  <div
-    class="relative wrapper h-[250px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden bg-cover bg-center "
-    style="background-image: url('./assets/images/spot.png');"
-  >
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-10"></div>
-
-    <!-- Overlay Content -->
-    <div
-      class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 gap-4 md:gap-8"
+      id="spotlight"
+      data-aos="fade-in"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+      class="flex justify-center pb-10 w-full"
     >
-      <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
-        Carmel Run 2025
-      </h2>
-      <p class="text-xs md:text-lg font-semibold  text-white tracking-wider">
-        22 Jun 2025, 5:30 am – 11:00 am IST
-      </p>
-      <p class="text-xs md:text-lg font-semibold italic  text-white tracking-wider">
-        Dr. B.R. Ambedkar Stadium, Bengaluru, India
-      </p>
-      <a
-        href="/registerpage.html"
-        class="mt-4 bg-orange-500 text-white font-bold italic py-2 px-4 md:px-6 rounded-lg hover:bg-orange-600 transition-all text-sm md:text-base"
+      <div
+        class="relative w-full h-[300px] md:h-[500px] lg:h-screen lg:w-screen overflow-hidden bg-cover bg-center"
+        style="background-image: url('./assets/images/index.png')"
       >
-        Register Now
-      </a>
-    </div>
-  </div>
-</section>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  
+        <!-- Overlay Content -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 gap-4 md:gap-8"
+        >
+          <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
+            Carmel Run 2025
+          </h2>
+          <p class="text-xs md:text-lg font-semibold text-white tracking-wider">
+            22 Jun 2025, 5:30 am – 11:00 am IST
+          </p>
+          <p
+            class="text-xs md:text-lg font-semibold italic text-white tracking-wider"
+          >
+            Dr. B.R. Ambedkar Stadium, Bengaluru, India
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!--Spotlight ends  -->
     <!-- ============================================================================================================================== -->
     <!-- About begin -->
@@ -133,18 +168,73 @@
                 About the Event
               </h5>
             </div>
-            <h1 class="text-2xl md:text-4xl text-black font-bold">
-              🏃‍♂️Carmel Run 2025 – Stride for a Cause! 🏅
+            <h1 class="text-2xl md:text-4xl text-black font-semibold">
+              Why Run CR25 ???
             </h1>
-            <p
-              class="text-base md:text-lg leading-relaxed mt-2 text-[#6D6D6D] mb-[10px] md:mb-[20px]"
-            >
-              The Carmel Run 2025 is more than just a race—it's a movement!
-              Organized by Carmel High School, Basaveshwaranagar, this event is
-              designed to ignite the spirit of fitness, camaraderie, and social
-              responsibility. Whether you’re a seasoned runner or just starting
-              your fitness journey, there's a category for everyone!
-            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              <!-- Card 1 -->
+              <div
+                class="bg-[#FDFDFD] p-6 rounded-xl shadow-md flex flex-col items-center text-center"
+              >
+                <img
+                  class="w-[24px]"
+                  src="https://img.icons8.com/fluency/48/student-male.png"
+                  alt="Student Friendly"
+                />
+                <h3 class="text-lg font-semibold mt-4">Student-Friendly</h3>
+                <p class="text-gray-500 mt-2 text-sm">
+                  Be part of the CARMEL family with student discounts for all
+                  runners u-18.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="bg-[#FDFDFD] p-6 rounded-xl shadow-md flex flex-col items-center text-center"
+              >
+                <img
+                  class="w-[24px]"
+                  src="https://img.icons8.com/fluency/48/prize.png"
+                  alt="Medal Motivation"
+                />
+                <h3 class="text-lg font-semibold mt-4">Medal-Motivation</h3>
+                <p class="text-gray-500 mt-2 text-sm">
+                  Earn your medal and celebrate your achievement for 5k & 10k
+                  categories.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="bg-[#FDFDFD] p-6 rounded-xl shadow-md flex flex-col items-center text-center"
+              >
+                <img
+                  class="w-[24px]"
+                  src="https://img.icons8.com/fluency/48/like.png"
+                  alt="Healthy Lifestyle"
+                />
+                <h3 class="text-lg font-semibold mt-4">Healthy Lifestyle</h3>
+                <p class="text-gray-500 mt-2 text-sm">
+                  Plan and prepare while you get into a healthy lifestyle.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="bg-[#FDFDFD] p-6 rounded-xl shadow-md flex flex-col items-center text-center"
+              >
+                <img
+                  class="w-[24px]"
+                  src="https://img.icons8.com/fluency/48/family.png"
+                  alt="Family Activity"
+                />
+                <h3 class="text-lg font-semibold mt-4">Family Activity</h3>
+                <p class="text-gray-500 mt-2 text-sm">
+                  Immerse yourself in race entertainment and celebrations.
+                </p>
+              </div>
+            </div>
             <div class="flex relative">
               <div class="relative w-full mt-6">
                 <svg
@@ -203,7 +293,7 @@
 
           <!-- Right Section -->
           <div
-            class="right bg-[#66C478] rounded-3xl w-full lg:w-[48%] p-8 flex flex-col items-center"
+            class="right bg-[#2480F9] rounded-3xl w-full lg:w-[48%] p-8 flex flex-col items-center"
           >
             <div class="w-[100%] md:w-[90%]">
               <img
@@ -231,93 +321,158 @@
     <!-- About ends -->
     <!-- ============================================================================================================================= -->
     <!-- Category begins -->
-    <section class="py-8 md:py-16"data-aos="fade-up"
-    data-aos-delay="300"
-    data-aos-offset="200">
+    <section
+      class="py-8 md:py-16"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-offset="200"
+    >
       <div class="wrapper">
-          <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Card 1 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
-                <input type="checkbox" class="hidden peer">
-                <div class="flip-card absolute w-full h-full">
-                    <!-- Front Side -->
-                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="https://source.unsplash.com/300x200/?nature" alt="Front Image" class="w-full h-full object-cover">
-                    </div>
-                    <!-- Back Side -->
-                    <div class="flip-back absolute w-full h-full bg-blue-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
-                        <p>Content for Card 1</p>
-                    </div>
-                </div>
-            </label>
-      
-            <!-- Card 2 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
-                <input type="checkbox" class="hidden peer">
-                <div class="flip-card absolute w-full h-full">
-                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="https://source.unsplash.com/300x200/?water" alt="Front Image" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flip-back absolute w-full h-full bg-green-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
-                        <p>Content for Card 2</p>
-                    </div>
-                </div>
-            </label>
-      
-            <!-- Card 3 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
-                <input type="checkbox" class="hidden peer">
-                <div class="flip-card absolute w-full h-full">
-                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="https://source.unsplash.com/300x200/?mountain" alt="Front Image" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flip-back absolute w-full h-full bg-red-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
-                        <p>Content for Card 3</p>
-                    </div>
-                </div>
-            </label>
-      
-            <!-- Card 4 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
-                <input type="checkbox" class="hidden peer">
-                <div class="flip-card absolute w-full h-full">
-                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="https://source.unsplash.com/300x200/?city" alt="Front Image" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flip-back absolute w-full h-full bg-purple-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
-                        <p>Content for Card 4</p>
-                    </div>
-                </div>
-            </label>
-      
-            <!-- Card 5 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
-                <input type="checkbox" class="hidden peer">
-                <div class="flip-card absolute w-full h-full">
-                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="https://source.unsplash.com/300x200/?forest" alt="Front Image" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flip-back absolute w-full h-full bg-yellow-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
-                        <p>Content for Card 5</p>
-                    </div>
-                </div>
-            </label>
-      
-            <!-- Card 6 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
-                <input type="checkbox" class="hidden peer">
-                <div class="flip-card absolute w-full h-full">
-                    <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="https://source.unsplash.com/300x200/?ocean" alt="Front Image" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flip-back absolute w-full h-full bg-orange-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg">
-                        <p>Content for Card 6</p>
-                    </div>
-                </div>
-            </label>
-      
-            <!-- Card 7 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
+        >
+          <!-- Card 1 -->
+          <label
+            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+          >
+            <input type="checkbox" class="hidden peer" />
+            <div class="flip-card absolute w-full h-full">
+              <!-- Front Side -->
+              <div
+                class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://source.unsplash.com/300x200/?nature"
+                  alt="Front Image"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Back Side -->
+              <div
+                class="flip-back absolute w-full h-full bg-blue-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
+              >
+                <p>Content for Card 1</p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Card 2 -->
+          <label
+            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+          >
+            <input type="checkbox" class="hidden peer" />
+            <div class="flip-card absolute w-full h-full">
+              <div
+                class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://source.unsplash.com/300x200/?water"
+                  alt="Front Image"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="flip-back absolute w-full h-full bg-green-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
+              >
+                <p>Content for Card 2</p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Card 3 -->
+          <label
+            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+          >
+            <input type="checkbox" class="hidden peer" />
+            <div class="flip-card absolute w-full h-full">
+              <div
+                class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://source.unsplash.com/300x200/?mountain"
+                  alt="Front Image"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="flip-back absolute w-full h-full bg-red-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
+              >
+                <p>Content for Card 3</p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Card 4 -->
+          <label
+            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+          >
+            <input type="checkbox" class="hidden peer" />
+            <div class="flip-card absolute w-full h-full">
+              <div
+                class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://source.unsplash.com/300x200/?city"
+                  alt="Front Image"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="flip-back absolute w-full h-full bg-purple-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
+              >
+                <p>Content for Card 4</p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Card 5 -->
+          <label
+            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+          >
+            <input type="checkbox" class="hidden peer" />
+            <div class="flip-card absolute w-full h-full">
+              <div
+                class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://source.unsplash.com/300x200/?forest"
+                  alt="Front Image"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="flip-back absolute w-full h-full bg-yellow-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
+              >
+                <p>Content for Card 5</p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Card 6 -->
+          <label
+            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+          >
+            <input type="checkbox" class="hidden peer" />
+            <div class="flip-card absolute w-full h-full">
+              <div
+                class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://source.unsplash.com/300x200/?ocean"
+                  alt="Front Image"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="flip-back absolute w-full h-full bg-orange-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
+              >
+                <p>Content for Card 6</p>
+              </div>
+            </div>
+          </label>
+
+          <!-- Card 7 -->
+          <!-- <label class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer">
                 <input type="checkbox" class="hidden peer">
                 <div class="flip-card absolute w-full h-full">
                     <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
@@ -327,10 +482,10 @@
                         <p>Content for Card 7</p>
                     </div>
                 </div>
-            </label>
-      
-            <!-- Card 8 -->
-            <label class="flip-container relative w-full md:w-64 h-40 cursor-pointer">
+            </label> -->
+
+          <!-- Card 8 -->
+          <!-- <label class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer">
                 <input type="checkbox" class="hidden peer">
                 <div class="flip-card absolute w-full h-full">
                     <div class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden">
@@ -340,62 +495,90 @@
                         <p>Content for Card 8</p>
                     </div>
                 </div>
-            </label>
+            </label> -->
         </div>
       </div>
-      </section>
+    </section>
     <!-- Category ends -->
     <!-- ==================================================================================================================== -->
 
     <!-- Results begins -->
     <section
-      class="text-center space-y-4 py-6 md:py-12 overflow-hidden"
+      class="bg-[#F9F9F9] text-center space-y-4 py-6 md:py-12 overflow-hidden"
       data-aos="fade-right"
       data-aos-delay="300"
       data-aos-offset="200"
     >
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Results</h2>
-      <p class="text-sm md:text-base text-blue-500">
-        Click the button to view and download the results<span
-          class="text-gray-400"
-          >.</span
-        >
-      </p>
-      <a href="/registerpage.html"
-        ><button
-          class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-[20px]"
-        >
-          Register Now
-        </button></a
-      >
+      <div class="main flex justify-between w-full">
+        <div class="left w-[49%]">
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Results</h2>
+          <p class="text-sm md:text-base text-blue-500">
+            Click the button to view and download the results<span
+              class="text-gray-400"
+              >.</span
+            >
+          </p>
+          <a href="/registerpage.html"
+            ><button
+              class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-[20px]"
+            >
+              Results
+            </button></a
+          >
+        </div>
+
+        <div class="right w-[49%]">
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Gallery</h2>
+          <p class="text-sm md:text-base text-blue-500">
+            Click the button to view the Images.<span
+              class="text-gray-400"
+              >.</span
+            >
+          </p>
+          <a href=""
+            ><button
+              class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-[20px]"
+            >
+              Gallery
+            </button></a
+          >
+        </div>
+      </div>
     </section>
 
-    
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTop"
+      class="hidden fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition w-14"
+      data-aos="fade"
+      data-aos-delay="100"
+      data-aos-offset="200"
+    >
+      <img src="./assets/images/up-arrow.svg" alt="up-arrow" />
+    </button>
 
+    <div
+      class="fixed bottom-4 left-4 z-50 flex flex-col space-y-3"
+      data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-offset="200"
+    >
+      <!-- Contact Button -->
+      <a
+        href="tel:080-23227015"
+        class="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600 transition"
+      >
+        📞 <span></span>
+      </a>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollToTop" class="hidden fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition w-14" data-aos="fade"
-  data-aos-delay="100"
-  data-aos-offset="200">
-    <img src="./assets/images/up-arrow.svg" alt="up-arrow"> 
-  </button>
-
-  <div class="fixed bottom-4 left-4 z-50 flex flex-col space-y-3"data-aos="fade-right"
-  data-aos-delay="100"
-  data-aos-offset="200">
-    <!-- Contact Button -->
-    <a href="tel:080-23227015" 
-       class="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600 transition">
-      📞 <span></span>
-    </a>
-  
-    <!-- Mail Button -->
-    <a href="mailto:info@carmelhighschool.org" 
-       class="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition">
-      ✉️ <span></span>
-    </a>
-  </div>
-
+      <!-- Mail Button -->
+      <a
+        href="mailto:info@carmelhighschool.org"
+        class="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition"
+      >
+        ✉️ <span></span>
+      </a>
+    </div>
 
     <!-- Result ends  -->
     <!-- ==================================================================================================================== -->
@@ -563,26 +746,26 @@
         once: false, // Animate only once
       });
     </script>
-        <script>
-          const scrollToTopBtn = document.getElementById("scrollToTop");
-  
-          // Show the button when scrolling down
-          window.addEventListener("scroll", function () {
-              if (window.scrollY > 300) {
-                  scrollToTopBtn.classList.remove("hidden");
-              } else {
-                  scrollToTopBtn.classList.add("hidden");
-              }
-          });
-  
-          // Scroll to top smoothly
-          scrollToTopBtn.addEventListener("click", function () {
-              window.scrollTo({
-                  top: 0,
-                  behavior: "smooth"
-              });
-          });
-      </script>
+    <script>
+      const scrollToTopBtn = document.getElementById("scrollToTop");
+
+      // Show the button when scrolling down
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.classList.remove("hidden");
+        } else {
+          scrollToTopBtn.classList.add("hidden");
+        }
+      });
+
+      // Scroll to top smoothly
+      scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

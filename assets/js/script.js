@@ -110,10 +110,10 @@ function slideNext() {
     index++;
 
     // Apply transition for smooth animation
-    sliderTrack.style.transition = 'transform 0.5s ease-in-out';
+    // sliderTrack.style.transition = 'transform 0.5s ease-in-out';
 
     // Translate the slider based on current index
-    sliderTrack.style.transform = `translateX(-${index * 100}%)`;
+    // sliderTrack.style.transform = `translateX(-${index * 100}%)`;
 
     // Loop back to the start (without animation) after the clone
     if (index === totalSlides) {
