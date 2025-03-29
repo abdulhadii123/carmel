@@ -179,10 +179,10 @@
               >
                 <img
                   class="w-[24px]"
-                  src="https://img.icons8.com/fluency/48/student-male.png"
+                  src="./assets/images/stud.png"
                   alt="Student Friendly"
                 />
-                <h3 class="text-lg font-semibold mt-4">Student-Friendly</h3>
+                <h3 class="text-lg  mt-4">Student-Friendly</h3>
                 <p class="text-gray-500 mt-2 text-sm">
                   Be part of the CARMEL family with student discounts for all
                   runners u-18.
@@ -195,10 +195,10 @@
               >
                 <img
                   class="w-[24px]"
-                  src="https://img.icons8.com/fluency/48/prize.png"
+                  src="./assets/images/med.png"
                   alt="Medal Motivation"
                 />
-                <h3 class="text-lg font-semibold mt-4">Medal-Motivation</h3>
+                <h3 class="text-lg  mt-4">Medal-Motivation</h3>
                 <p class="text-gray-500 mt-2 text-sm">
                   Earn your medal and celebrate your achievement for 5k & 10k
                   categories.
@@ -211,10 +211,10 @@
               >
                 <img
                   class="w-[24px]"
-                  src="https://img.icons8.com/fluency/48/like.png"
+                  src="./assets/images/health.png"
                   alt="Healthy Lifestyle"
                 />
-                <h3 class="text-lg font-semibold mt-4">Healthy Lifestyle</h3>
+                <h3 class="text-lg mt-4">Healthy Lifestyle</h3>
                 <p class="text-gray-500 mt-2 text-sm">
                   Plan and prepare while you get into a healthy lifestyle.
                 </p>
@@ -226,15 +226,17 @@
               >
                 <img
                   class="w-[24px]"
-                  src="https://img.icons8.com/fluency/48/family.png"
+                  src="./assets/images/fam.png"
                   alt="Family Activity"
                 />
-                <h3 class="text-lg font-semibold mt-4">Family Activity</h3>
+                <h3 class="text-lg mt-4">Family Activity</h3>
                 <p class="text-gray-500 mt-2 text-sm">
                   Immerse yourself in race entertainment and celebrations.
                 </p>
               </div>
             </div>
+
+
             <div class="flex relative">
               <div class="relative w-full mt-6">
                 <svg
@@ -297,7 +299,7 @@
           >
             <div class="w-[100%] md:w-[90%]">
               <img
-                src="./assets/images/bgimage.png"
+                src="./assets/images/abimage.png"
                 alt="Event Image"
                 class="rounded-lg w-full mt-[28px]"
               />
@@ -320,6 +322,41 @@
 
     <!-- About ends -->
     <!-- ============================================================================================================================= -->
+
+    <!-- Countdown begins -->
+    <section class="relative h-screen w-screen overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="./assets/images/countdown.png"
+          alt="Event Background"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- Dark Overlay -->
+      </div>
+
+      <!-- Countdown Timer -->
+      <div class="absolute inset-0 flex justify-center items-center">
+        <div id="countdown" class="text-white text-center flex space-x-6">
+          <!-- Days -->
+          <div>
+            <span class="text-6xl font-extrabold text-white" id="days">00</span>
+            <p class="text-lg uppercase text-white">Days</p>
+          </div>
+          <!-- Hours -->
+          <div>
+            <span class="text-6xl font-extrabold text-white" id="hours">00</span>
+            <p class="text-lg uppercase text-white">Hours</p>
+          </div>
+          <!-- Minutes -->
+          <div>
+            <span class="text-6xl font-extrabold text-white" id="minutes">00</span>
+            <p class="text-lg uppercase text-white">Minutes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ================================================================================================================= -->
     <!-- Category begins -->
     <section
       class="py-8 md:py-16"
@@ -333,7 +370,7 @@
         >
           <!-- Card 1 -->
           <label
-            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+            class="flip-container relative w-full md:w-[25rem] h-[15rem] cursor-pointer"
           >
             <input type="checkbox" class="hidden peer" />
             <div class="flip-card absolute w-full h-full">
@@ -342,9 +379,9 @@
                 class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
               >
                 <img
-                  src="https://source.unsplash.com/300x200/?nature"
+                  src="./assets/images/3km.png"
                   alt="Front Image"
-                  class="w-full h-full object-cover"
+                  class="h-full object-cover"
                 />
               </div>
               <!-- Back Side -->
@@ -358,7 +395,7 @@
 
           <!-- Card 2 -->
           <label
-            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+            class="flip-container relative w-full md:w-[25rem] h-[15rem] cursor-pointer"
           >
             <input type="checkbox" class="hidden peer" />
             <div class="flip-card absolute w-full h-full">
@@ -368,7 +405,7 @@
                 <img
                   src="https://source.unsplash.com/300x200/?water"
                   alt="Front Image"
-                  class="w-full h-full object-cover"
+                  class="h-full object-cover"
                 />
               </div>
               <div
@@ -381,7 +418,7 @@
 
           <!-- Card 3 -->
           <label
-            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+            class="flip-container relative w-full md:w-[25rem] h-[15rem] cursor-pointer"
           >
             <input type="checkbox" class="hidden peer" />
             <div class="flip-card absolute w-full h-full">
@@ -391,7 +428,7 @@
                 <img
                   src="https://source.unsplash.com/300x200/?mountain"
                   alt="Front Image"
-                  class="w-full h-full object-cover"
+                  class="h-full object-cover"
                 />
               </div>
               <div
@@ -404,7 +441,7 @@
 
           <!-- Card 4 -->
           <label
-            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+            class="flip-container relative w-full md:w-[25rem] h-[15rem] cursor-pointer"
           >
             <input type="checkbox" class="hidden peer" />
             <div class="flip-card absolute w-full h-full">
@@ -414,7 +451,7 @@
                 <img
                   src="https://source.unsplash.com/300x200/?city"
                   alt="Front Image"
-                  class="w-full h-full object-cover"
+                  class="h-full object-cover"
                 />
               </div>
               <div
@@ -427,7 +464,7 @@
 
           <!-- Card 5 -->
           <label
-            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+            class="flip-container relative w-full md:w-[25rem] h-[15rem] cursor-pointer"
           >
             <input type="checkbox" class="hidden peer" />
             <div class="flip-card absolute w-full h-full">
@@ -437,7 +474,7 @@
                 <img
                   src="https://source.unsplash.com/300x200/?forest"
                   alt="Front Image"
-                  class="w-full h-full object-cover"
+                  class="h-full object-cover"
                 />
               </div>
               <div
@@ -450,18 +487,14 @@
 
           <!-- Card 6 -->
           <label
-            class="flip-container relative w-full md:w-[20rem] h-[15rem] cursor-pointer"
+            class="flip-container relative w-full md:w-[25rem] h-[15rem] cursor-pointer"
           >
             <input type="checkbox" class="hidden peer" />
             <div class="flip-card absolute w-full h-full">
               <div
                 class="flip-front absolute w-full h-full bg-white shadow-lg rounded-lg overflow-hidden"
               >
-                <img
-                  src="https://source.unsplash.com/300x200/?ocean"
-                  alt="Front Image"
-                  class="w-full h-full object-cover"
-                />
+                <img src="" alt="Front Image" class="h-full object-cover" />
               </div>
               <div
                 class="flip-back absolute w-full h-full bg-orange-600 text-white flex items-center justify-center p-4 rounded-lg shadow-lg"
@@ -502,46 +535,78 @@
     <!-- Category ends -->
     <!-- ==================================================================================================================== -->
 
+
+<!-- Sponsor begins -->
+<section class="py-10 bg-white">
+  <div class="wrapper text-center">
+    <h2 class="text-xl md:text-2xl font-semibold text-gray-900">Our Sponsors</h2>
+    <div class="flex  justify-center items-center gap-8 mt-6">
+      <!-- Sponsor Logos -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+           alt="Google" class="h-10 md:h-12 object-contain hidden md:block" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" 
+           alt="Facebook" class="h-10 md:h-12 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+           alt="Instagram" class="h-10 md:h-12 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" 
+           alt="Twitter X" class="h-10 md:h-12 object-contain" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1200px-Snapchat_logo.svg.png" 
+           alt="Snapchat" class="h-10 md:h-12 object-contain" />
+    </div>
+  </div>
+</section>
+
+<!-- Sponser ends -->
+ <!-- =================================================================================================================== -->
+
+
     <!-- Results begins -->
     <section
-      class="bg-[#F9F9F9] text-center space-y-4 py-6 md:py-12 overflow-hidden"
+      class="bg-[#F9F9F9] text-center space-y-6 py-8 md:py-16 overflow-hidden"
       data-aos="fade-right"
       data-aos-delay="300"
       data-aos-offset="200"
     >
-      <div class="main flex justify-between w-full">
-        <div class="left w-[49%]">
-          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Results</h2>
-          <p class="text-sm md:text-base text-blue-500">
-            Click the button to view and download the results<span
-              class="text-gray-400"
-              >.</span
-            >
-          </p>
-          <a href="/registerpage.html"
-            ><button
-              class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-[20px]"
-            >
+      <div class="wrapper">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Results Section -->
+          <div class="">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">
               Results
-            </button></a
-          >
-        </div>
+            </h2>
+            <p class="text-sm md:text-base text-blue-500">
+              Click the button to view and download the results<span
+                class="text-gray-400"
+                >.</span
+              >
+            </p>
+            <a href="/registerpage.html">
+              <button
+                class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-4"
+              >
+                View Results
+              </button>
+            </a>
+          </div>
 
-        <div class="right w-[49%]">
-          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Gallery</h2>
-          <p class="text-sm md:text-base text-blue-500">
-            Click the button to view the Images.<span
-              class="text-gray-400"
-              >.</span
-            >
-          </p>
-          <a href=""
-            ><button
-              class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-[20px]"
-            >
+          <!-- Gallery Section -->
+          <div class="">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">
               Gallery
-            </button></a
-          >
+            </h2>
+            <p class="text-sm md:text-base text-blue-500">
+              Click the button to view the Images.<span class="text-gray-400"
+                >.</span
+              >
+            </p>
+            <a href="#">
+              <button
+                class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-orange-600 transition mt-4"
+              >
+                View Gallery
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -715,7 +780,7 @@
           <p class="mb-4 md:mb-0 text-white">
             Copyright &copy; 2021, Carmel Public School |
             <a href="#" class="text-blue-400 hover:underline"
-              >Website Developer: Webmad</a
+              >Website Developer: Calistaadesigns</a
             >
           </p>
           <div class="flex space-x-4">
@@ -765,6 +830,34 @@
           behavior: "smooth",
         });
       });
+    </script>
+       <script>
+        function startCountdown(eventDate) {
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = eventDate - now;
+
+                if (distance <= 0) {
+                    document.getElementById("countdown").innerHTML = "<h2 class='text-4xl font-bold'>Event Started!</h2>";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                document.getElementById("days").textContent = days.toString().padStart(2, "0");
+                document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
+                document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        // Set event date (YYYY, MM (0-11), DD, HH, MM)
+        const eventDate = new Date(2025, 3, 5, 8, 0).getTime(); // Example: April 5, 2025, 08:00 AM
+        startCountdown(eventDate);
     </script>
     <script src="./assets/js/script.js"></script>
   </body>
