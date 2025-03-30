@@ -7,6 +7,14 @@
     font-family: "Lucky";
     src: url(/assets/fonts/LuckyCoin-3zA46.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Super";
+    src: url(/assets/fonts/SuperCreamy-OGAPp.ttf);
+}
+@font-face {
+    font-family: "Owl";
+    src: url(/assets/fonts/OwlcuteRegular-3zwaZ.otf);
+}
 * {
     color: black;
     margin: 0%;
@@ -35,7 +43,7 @@
 }
 
 .banana{
-    font-family: "Lucky" !important;
+    font-family: "Owl" !important;
 }
 
 
