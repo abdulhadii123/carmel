@@ -26,11 +26,12 @@
   </head>
   <body>
     <header
-    class="bg-white fixed top-0 right-0 left-0 wrapper z-50"
+    class="fixed bg-white bg-opacity-70 top-0 right-0 left-0 z-50"
     data-aos="fade-in"
     data-aos-delay="300"
     data-aos-duration="1000"
   >
+  <div class="wrapper">
     <div class="container flex justify-between items-center p-4">
       <!-- Logo -->
       <div class="flex items-center w-[58px]">
@@ -38,39 +39,92 @@
           <img src="./assets/images/CHS.png" alt="Logo" />
         </a>
       </div>
-  
+      <!-- <div
+      class="flex items-center"
+    >
+      <div class="flex w-[58px]">
+        <img src="./assets/images/CHS.png" alt="Carmel High School Logo" />
+      </div>
+      <div class="text-center md:text-left">
+        <h2 class="text-sm font-semibold text-[#396DB2]">
+          CARMEL HIGH SCHOOL
+        </h2>
+        <p class="text-[12px] text-white">BASAVESHWARANAGAR, BANGALORE</p>
+      </div>
+    </div> -->
+
       <!-- Navigation Links -->
       <nav id="nav-links" class="hidden md:flex space-x-6">
-        <a href="./index.html" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
-        <a href="./aboutpage.html" class="nav-link text-gray-700 hover:text-blue-600">Race</a>
-        <a href="./rulesrootmap.html" class="nav-link text-gray-700 hover:text-blue-600">Rules</a>
-        <a href="./result.html" class="nav-link text-gray-700 hover:text-blue-600">Result</a>
+        <a href="./index.html" class="nav-link text-blue hover:text-blue-600"
+          >Home</a
+        >
+        <a
+          href="./aboutpage.html"
+          class="nav-link text-blue hover:text-blue-600"
+          >Race</a
+        >
+        <a
+          href="./rulesrootmap.html"
+          class="nav-link text-blue hover:text-blue-600"
+          >Rules</a
+        >
+        <a
+          href="./result.html"
+          class="nav-link text-blue hover:text-blue-600"
+          >Result</a
+        >
       </nav>
-  
+
       <!-- Register Button -->
       <div>
-        <a href="/registerpage.html"
-          class="bg-[#396DB2] text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-blue-600 transition">
+        <a
+          href="/registerpage.html"
+          class="bg-[#396DB2] text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-blue-600 transition"
+        >
           Register Now
         </a>
       </div>
-  
+
       <!-- Mobile Menu Button -->
       <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"></path>
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="blue"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
         </svg>
       </button>
     </div>
-  
+  </div>
     <!-- Mobile Menu -->
-    <nav id="mobile-menu"
-      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden">
+    <nav
+      id="mobile-menu"
+      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden"
+    >
       <a href="./index.html" class="block py-2 text-blue-600">Home</a>
-      <a href="./aboutpage.html" class="block py-2 text-gray-700 hover:text-blue-600">Race</a>
-      <a href="./rulesrootmap.html" class="block py-2 text-gray-700 hover:text-blue-600">Rules</a>
-      <a href="./result.html" class="block py-2 text-gray-700 hover:text-blue-600">Result</a>
+      <a
+        href="./aboutpage.html"
+        class="block py-2 text-gray-700 hover:text-blue-600"
+        >Race</a
+      >
+      <a
+        href="./rulesrootmap.html"
+        class="block py-2 text-gray-700 hover:text-blue-600"
+        >Rules</a
+      >
+      <a
+        href="./result.html"
+        class="block py-2 text-gray-700 hover:text-blue-600"
+        >Result</a
+      >
     </nav>
   </header>
     <!-- Header ends -->
