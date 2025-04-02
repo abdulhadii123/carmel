@@ -15,6 +15,13 @@
     font-family: "Owl";
     src: url(/assets/fonts/OwlcuteRegular-3zwaZ.otf);
 }
+@font-face {
+  font-family: 'Racing Sans One Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Racing Sans One Regular'), url('RacingSansOne-Regular.woff') format('woff');
+  }
+
 * {
     color: black;
     margin: 0%;
@@ -45,7 +52,9 @@
 .banana{
     font-family: "Owl" !important;
 }
-
+.Racing{
+  font-family: 'Racing Sans One Regular' !important;
+}
 
 
 
