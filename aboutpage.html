@@ -27,7 +27,7 @@
       <!-- Logo -->
       <div class="flex items-center w-[58px]">
         <a href="./index.html">
-          <img src="./assets/images/CHS.png" alt="Logo" />
+          <img src="./assets/images/lg.png" alt="Logo" />
         </a>
       </div>
       <!-- <div
@@ -55,12 +55,12 @@
           >Race</a
         >
         <a
-          href="./rulesrootmap.html"
+          href="#"
           class="nav-link text-blue hover:text-blue-600"
           >Rules</a
         >
         <a
-          href="./result.html"
+          href="#"
           class="nav-link text-blue hover:text-blue-600"
           >Result</a
         >
@@ -107,12 +107,12 @@
         >Race</a
       >
       <a
-        href="./rulesrootmap.html"
+        href="#"
         class="block py-2 text-gray-700 hover:text-blue-600"
         >Rules</a
       >
       <a
-        href="./result.html"
+        href="#"
         class="block py-2 text-gray-700 hover:text-blue-600"
         >Result</a
       >
@@ -120,21 +120,58 @@
   </header>
     <!-- Header ends -->
     <!-- ============================================================================================================ -->
+     <!-- Spotlight begins -->
+    <section
+    id="spotlight"
+    data-aos="fade-in"
+    data-aos-delay="300"
+    data-aos-duration="1000"
+    class="flex justify-center pb-10 w-full"
+  >
+    <div
+      class="relative w-full h-[300px] md:h-[500px] lg:h-screen lg:w-screen overflow-hidden bg-cover bg-center"
+      style="background-image: url('./assets/images/spab.png')"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <!-- Overlay Content -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center  gap-4 md:gap-12"
+      >
+        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
+          Carmel Run 2025
+        </h2>
+        <p class="text-xs md:text-lg font-semibold text-white tracking-wider">
+          22 Jun 2025, 5:30 am – 11:00 am IST
+        </p>
+        <p
+          class="text-xs md:text-lg font-semibold italic text-white tracking-wider"
+        >
+          Dr. B.R. Ambedkar Stadium, Bengaluru, India
+        </p>
+        <a href="/registerpage.html">
+          <button
+            class="bg-[#396DB2] text-white font-semibold italic px-6 py-3 rounded-xl shadow-lg hover:bg-blue-600 transition mt-4"
+          >
+            Register Now
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Spotlight ends -->
+   <!-- ======================================================================================================= -->
+
 
     <!-- About begins -->
-    <section id="about" class="pb-8 md:pb-16 pt-[130px] md:pt-[160px]"  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
+    <section id="about" class="py-8 md:py-16"  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
       <div class="wrapper">
         <div
           class="flex flex-col md:flex-row items-center md:items-start gap-8 pb-[40px]"
         >
           <!-- Left Section -->
-          <div class="w-full md:w-1/2">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="">
-                <img src="./assets/images/ab.png" alt="Event Icon" class="" />
-              </div>
-              <h5 class="font-bold text-lg text-[#5A95D1]">About the Event</h5>
-            </div>
+          <div class="w-full text-center">
             <h1 class="text-2xl md:text-4xl font-semibold text-black leading-snug">
               🏃‍♂️ Carmel Run 2025 – Stride for a Cause! 🏅
             </h1>
@@ -151,7 +188,7 @@
             <span class="text-[#396DB2] font-bold"> ಬನ್ನಿ ಓಡೋಣ</span>
           </div>
         </div>
-        <div class="bottom w-full md:w-1/2">
+        <!-- <div class="bottom w-full md:w-1/2">
             <a
               href="https://youtu.be/NNCZ2wtHONc"
               target="_blank"
@@ -176,7 +213,7 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
           
       </div>
     </section>
@@ -185,14 +222,14 @@
     <!-- ============================================================================================================== -->
 
     <!-- Carmel begins -->
-<section class="">
+<section class=""data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
     
     <div class="wrapper py-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
             <!-- 2022 Run -->
             <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                 <img src="./assets/images/2022.png" alt="Carmel Run 2022" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition">
+                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
                     250 Runners
                 </button>
             </div>
@@ -200,7 +237,7 @@
             <!-- 2023 Run -->
             <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                 <img src="./assets/images/2023.png" alt="Carmel Run 2023" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition">
+                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
                     700 Runners
                 </button>
             </div>
@@ -208,7 +245,7 @@
             <!-- 2024 Run -->
             <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                 <img src="./assets/images/2024.png" alt="Carmel Run 2024" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition">
+                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
                     900 Runners
                 </button>
             </div>
@@ -216,7 +253,7 @@
             <!-- 2025 Run -->
             <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                 <img src="./assets/images/2025.png" alt="Carmel Run 2025" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition">
+                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
                     Register Now
                 </button>
             </div>
@@ -232,33 +269,42 @@
     <section class="py-10 md:py-20 bg-[#F9F9F9]">
         <div class="wrapper">
           <h2 class="text-xl md:text-2xl font-semibold text-gray-900 text-left mb-8">Category Details</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- Fun Run -->
             <div class="bg-[#FF8E00] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">FUN RUN</h3>
               <p class="mt-2"><strong>Distance:</strong> 3 KM</p>
               <p><strong>Age:</strong> 10 Years - 60 Years</p>
+              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
               <p class="mt-2 text-sm">
-                The price includes an event T-shirt, an E-Certificate, breakfast, and safety and medical support.
+                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
               </p>
+              <h3 class="mt-4"><strong>Student Price : ₹550/-</strong>(plus tax)</h3>
+              <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
             </div>
           
             <!-- 5K Run -->
             <div class="bg-[#00C2CB] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">05 KM</h3>
               <p class="mt-2"><strong>Age Groups:</strong> Under 14 | Under 18 | 18 to 30 | 31 to 45 | 45 Plus</p>
+              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
               <p class="mt-2 text-sm">
-                Price includes Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety and Medical Support.
+                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
               </p>
+              <h3 class="mt-4"><strong>Student Price : ₹750/-</strong>(plus tax)</h3>
+              <h3><strong>General Price : ₹850/-</strong>(plus tax)</h3>
             </div>
           
             <!-- 10K Run -->
             <div class="bg-[#7DCE13] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">10 KM</h3>
               <p class="mt-2"><strong>Age Groups:</strong> Under 14 | Under 18 | 18 to 30 | 31 to 45 | 45 Plus</p>
+              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
               <p class="mt-2 text-sm">
-                Price includes Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety and Medical Support.
+                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
               </p>
+              <h3 class="mt-4"><strong>Student Price : ₹550/-</strong>(plus tax)</h3>
+              <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
             </div>
           
             <!-- Family Run -->
@@ -267,13 +313,15 @@
               <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
               <p><strong>Age:</strong> 3 Years - 60 Years</p>
               <p><strong>Family:</strong> 2 to 4 members</p>
+              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
               <p class="mt-2 text-sm">
-                The price includes E-certificate, Breakfast, Safety and Medical Support.
+                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
               </p>
+              <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
             </div>
           
             <!-- Pet Parade -->
-            <div class="bg-[#34D399] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+            <!-- <div class="bg-[#34D399] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">PET PARADE</h3>
               <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
               <p><strong>Age:</strong> 10 Years - 60 Years</p>
@@ -282,16 +330,16 @@
                 Price includes Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety and Medical Support.
               </p>
             </div>
-          
+           -->
             <!-- Seniors Walk -->
-            <div class="bg-[#FACC15] text-gray-900 p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+            <!-- <div class="bg-[#FACC15] text-gray-900 p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">SENIORS WALK</h3>
               <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
               <p><strong>Age:</strong> 60 Years and above</p>
               <p class="mt-2 text-sm">
                 Price includes Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety and Medical Support.
               </p>
-            </div>
+            </div> -->
           </div>
           
         </div>
@@ -357,7 +405,7 @@
        <!-- ====================================================================================================== -->
       
        <!-- Why join begins -->
-       <section class=" py-12 md:py-24 "  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
+       <section class="bg-[#F9F9F9] py-12 md:py-24 "  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
         <div class="wrapper text-center">
           
           <!-- Section Title -->
@@ -377,7 +425,7 @@
           <div class="flex flex-wrap justify-center md:justify-around gap-6 mt-16">
   
             <!-- Card 1 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl shadow-lg text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300">
+            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300">
               <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">🏃‍♂️ Stay Fit</h3>
               <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
                 Engage in a healthy challenge that boosts physical & mental well-being.
@@ -385,7 +433,7 @@
             </div>
           
             <!-- Card 2 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl shadow-lg text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300">
+            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300">
               <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">❤️ Support a Cause</h3>
               <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
                 Every step contributes to a noble mission, impacting lives beyond the race.
@@ -393,7 +441,7 @@
             </div>
           
             <!-- Card 3 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl shadow-lg text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300">
+            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300">
               <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">🥇 Earn Medals & Goodies</h3>
               <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
                 All participants receive event T-shirts, finisher medals, and exclusive goodies.
@@ -401,7 +449,7 @@
             </div>
           
             <!-- Card 4 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl shadow-lg text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300">
+            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300">
               <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">🎉 Enjoy a Fun Experience</h3>
               <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
                 From exciting race-day vibes to post-run celebrations, it’s an experience like no other!
