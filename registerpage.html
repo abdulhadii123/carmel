@@ -48,22 +48,22 @@
 
       <!-- Navigation Links -->
       <nav id="nav-links" class="hidden md:flex space-x-6">
-        <a href="./index.html" class="nav-link text-blue hover:text-blue-600"
+        <a href="./index.html" class="nav-link text-blue font-semibold  hover:text-blue-600"
           >Home</a
         >
         <a
           href="./aboutpage.html"
-          class="nav-link text-blue hover:text-blue-600"
+          class="nav-link text-blue font-semibold  hover:text-blue-600"
           >Race</a
         >
         <a
           href="#"
-          class="nav-link text-blue hover:text-blue-600"
+          class="nav-link text-blue font-semibold  hover:text-blue-600"
           >Rules</a
         >
         <a
           href="#"
-          class="nav-link text-blue hover:text-blue-600"
+          class="nav-link text-blue font-semibold hover:text-blue-600"
           >Result</a
         >
       </nav>
@@ -295,8 +295,9 @@
                               <select name="raceType[]" class="w-full px-4 py-2 border rounded-lg focus:outline-blue-500" required>
                                 <option value=""></option>
                                 <option>3KM FUN RUN</option>
+                                <option>5KM RUN</option>
                                 <option>10KM RUN</option>
-                                <option>FAMILY RUN</option>
+                                <option>FAMILY RUN (2-4 Members)</option>
                               </select>
                               <p class="text-red-500 text-sm hidden" id="raceTypeError">Please select a race type</p>
                             </div>
@@ -304,7 +305,11 @@
                             <div>
                                 <label class="block text-gray-700">Category</label>
                                 <select name="category[]" class="w-full px-4 py-2 border rounded-lg" required>
-                                    <option value=""></option>
+                                    <option value="">Under 14</option>
+                                    <option value="">Under 18</option>
+                                    <option value="">18 to 30</option>
+                                    <option value="">31 to 45</option>
+                                    <option value="">45 Plus</option>
                                   
                                 </select>
                             </div>
@@ -604,6 +609,31 @@
           });
           
            </script>
+           <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              // Function to enable or disable the category field based on race type
+              function toggleCategory(selectElement) {
+                const categoryDropdown = selectElement.closest(".student-form").querySelector("[name='category[]']");
+                
+                if (selectElement.value === "5KM RUN" || selectElement.value === "10KM RUN") {
+                  categoryDropdown.removeAttribute("disabled"); // Enable category
+                } else {
+                  categoryDropdown.setAttribute("disabled", "true"); // Disable category
+                }
+              }
+          
+              // Attach event listener to all existing Race Type dropdowns
+              document.querySelectorAll("[name='raceType[]']").forEach((raceTypeDropdown) => {
+                raceTypeDropdown.addEventListener("change", function () {
+                  toggleCategory(this);
+                });
+          
+                // Call function initially to set correct state on page load
+                toggleCategory(raceTypeDropdown);
+              });
+            });
+          </script>
+          
   </body>
   
 </html>
