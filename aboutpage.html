@@ -13,24 +13,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <title>Carmel</title>
-    <link rel="icon" type="image/png" href="./assets/images/CHS.png">
+    <link rel="icon" type="image/png" href="./assets/images/CHS.png" />
   </head>
   <body>
     <header
-    class="fixed bg-white top-0 right-0 left-0 z-50"
-    data-aos="fade-in"
-    data-aos-delay="300"
-    data-aos-duration="1000"
-  >
-  <div class="wrapper">
-    <div class="container flex justify-between items-center p-4">
-      <!-- Logo -->
-      <div class="flex items-center w-[58px]">
-        <a href="./index.html">
-          <img src="./assets/images/lg.png" alt="Logo" />
-        </a>
-      </div>
-      <!-- <div
+      class="fixed bg-white top-0 right-0 left-0 z-50"
+      data-aos="fade-in"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
+      <div class="wrapper">
+        <div class="container flex justify-between items-center p-4">
+          <!-- Logo -->
+          <div class="flex items-center w-[58px]">
+            <a href="./index.html">
+              <img src="./assets/images/lg.png" alt="Logo" />
+            </a>
+          </div>
+          <!-- <div
       class="flex items-center"
     >
       <div class="flex w-[58px]">
@@ -44,154 +44,171 @@
       </div>
     </div> -->
 
-      <!-- Navigation Links -->
-      <nav id="nav-links" class="hidden md:flex space-x-6">
-        <a href="./index.html" class="nav-link text-blue font-semibold  hover:text-blue-600"
-          >Home</a
-        >
+          <!-- Navigation Links -->
+          <nav id="nav-links" class="hidden md:flex space-x-6">
+            <a
+              href="./index.html"
+              class="nav-link text-blue font-semibold hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="./aboutpage.html"
+              class="nav-link text-blue font-semibold hover:text-blue-600"
+              >Race</a
+            >
+            <a
+              href="#"
+              class="nav-link text-blue font-semibold hover:text-blue-600"
+              >Rules</a
+            >
+            <a
+              href="#"
+              class="nav-link text-blue font-semibold hover:text-blue-600"
+              >Result</a
+            >
+          </nav>
+
+          <!-- Register Button -->
+          <div>
+            <a
+              href="/registerpage.html"
+              class="bg-[#396DB2] text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-blue-600 transition"
+            >
+              Register Now
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="blue"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden"
+      >
+        <a href="./index.html" class="block py-2 text-blue-600">Home</a>
         <a
           href="./aboutpage.html"
-          class="nav-link text-blue font-semibold  hover:text-blue-600"
+          class="block py-2 text-gray-700 hover:text-blue-600"
           >Race</a
         >
-        <a
-          href="#"
-          class="nav-link text-blue font-semibold  hover:text-blue-600"
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
           >Rules</a
         >
-        <a
-          href="#"
-          class="nav-link text-blue font-semibold  hover:text-blue-600"
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600"
           >Result</a
         >
       </nav>
-
-      <!-- Register Button -->
-      <div>
-        <a
-          href="/registerpage.html"
-          class="bg-[#396DB2] text-white px-4 py-2 rounded-lg font-semibold italic shadow-md hover:bg-blue-600 transition"
-        >
-          Register Now
-        </a>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="blue"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          ></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-    <!-- Mobile Menu -->
-    <nav
-      id="mobile-menu"
-      class="absolute left-0 top-16 w-full bg-white shadow-lg p-4 opacity-0 z-10 invisible transform transition-all duration-300 ease-in-out md:hidden"
-    >
-      <a href="./index.html" class="block py-2 text-blue-600">Home</a>
-      <a
-        href="./aboutpage.html"
-        class="block py-2 text-gray-700 hover:text-blue-600"
-        >Race</a
-      >
-      <a
-        href="#"
-        class="block py-2 text-gray-700 hover:text-blue-600"
-        >Rules</a
-      >
-      <a
-        href="#"
-        class="block py-2 text-gray-700 hover:text-blue-600"
-        >Result</a
-      >
-    </nav>
-  </header>
+    </header>
     <!-- Header ends -->
     <!-- ============================================================================================================ -->
-     <!-- Spotlight begins -->
+    <!-- Spotlight begins -->
     <section
-    id="spotlight"
-    data-aos="fade-in"
-    data-aos-delay="300"
-    data-aos-duration="1000"
-    class="flex justify-center pb-10 w-full pt-[40px]"
-  >
-    <div
-      class="relative w-full h-[300px] md:h-[500px] lg:h-screen lg:w-screen overflow-hidden bg-cover bg-center"
-      style="background-image: url('./assets/images/spab.png')"
+      id="spotlight"
+      data-aos="fade-in"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+      class="flex justify-center pb-10 w-full pt-[40px]"
     >
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-      <!-- Overlay Content -->
       <div
-        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center  gap-4 md:gap-8"
+        class="relative w-full h-[300px] md:h-[500px] lg:h-screen lg:w-screen overflow-hidden bg-cover bg-center"
+        style="background-image: url('./assets/images/spab.png')"
       >
-        <h2 class="Racing text-2xl md:text-4xl lg:text-5xl italic font-bold text-white">
-          Carmel Run 2025
-        </h2>
-        <p class=" Racing text-xs md:text-lg font-semibold italic text-white tracking-wider">
-          22 June 2025
-        </p>
-        <p class="Racing text-xs md:text-lg font-semibold text-white tracking-wider">
-          #CR25
-         </p>
-        <p
-          class="Racing text-xs md:text-lg font-semibold italic text-white tracking-wider"
-        >
-          Dr. B.R. Ambedkar Stadium, Bengaluru, India
-        </p>
-        <a href="/registerpage.html">
-          <button
-            class="bg-[#396DB2] Racing text-white font-bold italic px-6 py-3 rounded-xl shadow-lg hover:bg-blue-600 transition mt-4"
-          >
-            Register Now
-          </button>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Spotlight ends -->
-   <!-- ======================================================================================================= -->
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
+        <!-- Overlay Content -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center gap-4 md:gap-8"
+        >
+          <h2
+            class="Racing text-2xl md:text-4xl lg:text-5xl italic font-bold text-white"
+          >
+            Carmel Run 2025
+          </h2>
+          <p
+            class="Racing text-xs md:text-lg font-semibold italic text-white tracking-wider"
+          >
+            22 June 2025
+          </p>
+          <p
+            class="Racing text-xs md:text-lg font-semibold text-white tracking-wider"
+          >
+            #CR25
+          </p>
+          <p
+            class="Racing text-xs md:text-lg font-semibold italic text-white tracking-wider"
+          >
+            Dr. B.R. Ambedkar Stadium, Bengaluru, India
+          </p>
+          <a href="/registerpage.html">
+            <button
+              class="bg-[#396DB2] Racing text-white font-bold italic px-6 py-3 rounded-xl shadow-lg hover:bg-blue-600 transition mt-4"
+            >
+              Register Now
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Spotlight ends -->
+    <!-- ======================================================================================================= -->
 
     <!-- About begins -->
-    <section id="about" class="py-8 md:py-16"  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
+    <section
+      id="about"
+      class="py-8 md:py-16"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-offset="200"
+    >
       <div class="wrapper">
         <div
-          class="flex flex-col md:flex-row items-center md:items-start gap-8 "
+          class="flex flex-col md:flex-row items-center md:items-start gap-8"
         >
           <!-- Left Section -->
           <div class="w-full text-center">
-            <h1 class="text-2xl md:text-4xl font-semibold text-black leading-snug mb-10">
+            <h1
+              class="text-2xl md:text-4xl font-semibold text-black leading-snug mb-10"
+            >
               🏃‍♂️ Carmel Run 2025 – Stride for a Cause! 🏅
             </h1>
 
-          <!-- Right Section -->
-          <div class="">
-            <p class="text-justify md:text-center md:text-[18px] leading-[35px] text-[#6D6D6D]">
-              The Carmel Run 2025 is more than just a race—it's a movement!
-              Organized by Carmel High School, Basaveshwaranagar, this event is
-              designed to ignite the spirit of fitness, camaraderie, and social
-              responsibility. Whether you’re a seasoned runner or just starting
-              your fitness journey, there's a category for everyone!
-            </p>
-            <span class="text-[#396DB2] font-bold"> ಬನ್ನಿ ಓಡೋಣ</span>
+            <!-- Right Section -->
+            <div class="flex justify-center items-center">
+              <p
+                class="text-justify md:text-center md:text-[18px] leading-[35px] text-[#6D6D6D] w-[80%]"
+              >
+                Carmel Run is Carmel High School's annual signature running
+                event that brings together students , parents, teachers, and the
+                wider community for a day of fitness, fun, and purpose in
+                Bangalore Launched in 2022 , with the vision of promoting a
+                healthy lifestyle and social responsibility, Carmel Run is not
+                just a race—it's a celebration of unity, determination, and
+                collective impact.
+              </p>
+            </div>
+            <span class="text-[#396DB2] font-bold text-[24px]">
+              ಬನ್ನಿ ಓಡೋಣ</span
+            >
           </div>
-        </div>
-        <!-- <div class="bottom w-full md:w-1/2">
+          <!-- <div class="bottom w-full md:w-1/2">
             <a
               href="https://youtu.be/NNCZ2wtHONc"
               target="_blank"
@@ -217,7 +234,7 @@
               </div>
             </a>
           </div> -->
-          
+        </div>
       </div>
     </section>
 
@@ -225,106 +242,173 @@
     <!-- ============================================================================================================== -->
 
     <!-- Carmel begins -->
-<section class=""data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
-    
-    <div class="wrapper py-8">
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
-            <!-- 2022 Run -->
-            <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                <img src="./assets/images/2022.png" alt="Carmel Run 2022" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
-                    250 Runners
-                </button>
-            </div>
+    <section
+      class=""
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-offset="200"
+    >
+      <div class="wrapper py-8">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center"
+        >
+          <!-- 2022 Run -->
+          <div
+            class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/2022.png"
+              alt="Carmel Run 2022"
+              class="mx-auto w-full max-w-[150px]"
+            />
+            <button
+              class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition"
+            >
+              250 Runners
+            </button>
+          </div>
 
-            <!-- 2023 Run -->
-            <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                <img src="./assets/images/2023.png" alt="Carmel Run 2023" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
-                    700 Runners
-                </button>
-            </div>
+          <!-- 2023 Run -->
+          <div
+            class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/2023.png"
+              alt="Carmel Run 2023"
+              class="mx-auto w-full max-w-[150px]"
+            />
+            <button
+              class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition"
+            >
+              700 Runners
+            </button>
+          </div>
 
-            <!-- 2024 Run -->
-            <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                <img src="./assets/images/2024.png" alt="Carmel Run 2024" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
-                    900 Runners
-                </button>
-            </div>
+          <!-- 2024 Run -->
+          <div
+            class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/2024.png"
+              alt="Carmel Run 2024"
+              class="mx-auto w-full max-w-[150px]"
+            />
+            <button
+              class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition"
+            >
+              900 Runners
+            </button>
+          </div>
 
-            <!-- 2025 Run -->
-            <div class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                <img src="./assets/images/2025.png" alt="Carmel Run 2025" class="mx-auto w-full max-w-[150px]">
-                <button class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition">
-                    Register Now
-                </button>
-            </div>
+          <!-- 2025 Run -->
+          <div
+            class="bg-white p-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/2025.png"
+              alt="Carmel Run 2025"
+              class="mx-auto w-full max-w-[150px]"
+            />
+            <button
+              class="mt-8 bg-blue-500 text-white text-[12px] md:text-[20px] font-bold py-2 px-4 rounded-2xl hover:bg-blue-700 transition"
+            >
+              Register Now
+            </button>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Carmel ends -->
- <!-- =========================================================================================== -->
+    <!-- Carmel ends -->
+    <!-- =========================================================================================== -->
 
-
-     <!-- Cards begins -->
+    <!-- Cards begins -->
     <section class="py-10 md:py-20 bg-[#F9F9F9]">
-        <div class="wrapper">
-          <h2 class="text-xl md:text-2xl font-semibold text-gray-900 text-left mb-8">Category Details</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
-            <!-- Fun Run -->
-            <div class="bg-[#FF8E00] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-              <h3 class="font-bold italic text-lg">FUN RUN</h3>
-              <p class="mt-2"><strong>Distance:</strong> 3 KM</p>
-              <p><strong>Age:</strong> 10 Years - 60 Years</p>
-              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
-              <p class="mt-2 text-sm">
-                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
-              </p>
-              <h3 class="mt-4"><strong>Student Price : ₹550/-</strong>(plus tax)</h3>
-              <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
-            </div>
-          
-            <!-- 5K Run -->
-            <div class="bg-[#00C2CB] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-              <h3 class="font-bold italic text-lg">05 KM</h3>
-              <p class="mt-2"><strong>Age Groups:</strong> Under 14 | Under 18 | 18 to 30 | 31 to 45 | 45 Plus</p>
-              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
-              <p class="mt-2 text-sm">
-                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
-              </p>
-              <h3 class="mt-4"><strong>Student Price : ₹750/-</strong>(plus tax)</h3>
-              <h3><strong>General Price : ₹850/-</strong>(plus tax)</h3>
-            </div>
-          
-            <!-- 10K Run -->
-            <div class="bg-[#7DCE13] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-              <h3 class="font-bold italic text-lg">10 KM</h3>
-              <p class="mt-2"><strong>Age Groups:</strong> Under 14 | Under 18 | 18 to 30 | 31 to 45 | 45 Plus</p>
-              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
-              <p class="mt-2 text-sm">
-                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
-              </p>
-              <h3 class="mt-4"><strong>Student Price : ₹550/-</strong>(plus tax)</h3>
-              <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
-            </div>
-          
-            <!-- Family Run -->
-            <div class="bg-[#F4A261] text-gray-900 p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-              <h3 class="font-bold italic text-lg">FAMILY RUN</h3>
-              <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
-              <p><strong>Age:</strong> 3 Years - 60 Years</p>
-              <p><strong>Family:</strong> 2 to 4 members</p>
-              <h3 class="mt-4"><strong>What’s Included?</strong></h3>
-              <p class="mt-2 text-sm">
-                T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route refreshment, Zumba & Warm up, Stretch Zone
-              </p>
-              <h3 class="mt-4"><strong>General Price : ₹650/-</strong>(plus tax)</h3>
-            </div>
-          
-            <!-- Pet Parade -->
-            <!-- <div class="bg-[#34D399] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+      <div class="wrapper">
+        <h2
+          class="text-xl md:text-2xl font-semibold text-gray-900 text-left mb-8"
+        >
+          Category Details
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Fun Run -->
+          <div
+            class="bg-[#FF8E00] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <h3 class="font-bold italic text-lg">FUN RUN</h3>
+            <p class="mt-2"><strong>Distance:</strong> 3 KM</p>
+            <p><strong>Age:</strong> 10 Years - 60 Years</p>
+            <h3 class="mt-4"><strong>What’s Included?</strong></h3>
+            <p class="mt-2 text-sm">
+              T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route
+              refreshment, Zumba & Warm up, Stretch Zone
+            </p>
+            <h3 class="mt-4">
+              <strong>Student Price : ₹550/-</strong>(plus tax)
+            </h3>
+            <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
+          </div>
+
+          <!-- 5K Run -->
+          <div
+            class="bg-[#00C2CB] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <h3 class="font-bold italic text-lg">05 KM</h3>
+            <p class="mt-2">
+              <strong>Age Groups:</strong> Under 14 | Under 18 | 18 to 30 | 31
+              to 45 | 45 Plus
+            </p>
+            <h3 class="mt-4"><strong>What’s Included?</strong></h3>
+            <p class="mt-2 text-sm">
+              T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route
+              refreshment, Zumba & Warm up, Stretch Zone
+            </p>
+            <h3 class="mt-4">
+              <strong>Student Price : ₹750/-</strong>(plus tax)
+            </h3>
+            <h3><strong>General Price : ₹850/-</strong>(plus tax)</h3>
+          </div>
+
+          <!-- 10K Run -->
+          <div
+            class="bg-[#7DCE13] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <h3 class="font-bold italic text-lg">10 KM</h3>
+            <p class="mt-2">
+              <strong>Age Groups:</strong> Under 14 | Under 18 | 18 to 30 | 31
+              to 45 | 45 Plus
+            </p>
+            <h3 class="mt-4"><strong>What’s Included?</strong></h3>
+            <p class="mt-2 text-sm">
+              T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route
+              refreshment, Zumba & Warm up, Stretch Zone
+            </p>
+            <h3 class="mt-4">
+              <strong>Student Price : ₹550/-</strong>(plus tax)
+            </h3>
+            <h3><strong>General Price : ₹650/-</strong>(plus tax)</h3>
+          </div>
+
+          <!-- Family Run -->
+          <div
+            class="bg-[#F4A261] text-gray-900 p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            <h3 class="font-bold italic text-lg">FAMILY RUN</h3>
+            <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
+            <p><strong>Age:</strong> 3 Years - 60 Years</p>
+            <p><strong>Family:</strong> 2 to 4 members</p>
+            <h3 class="mt-4"><strong>What’s Included?</strong></h3>
+            <p class="mt-2 text-sm">
+              T-shirt, BIB KIT (non-chipped), E-certificate, Breakfast, On route
+              refreshment, Zumba & Warm up, Stretch Zone
+            </p>
+            <h3 class="mt-4">
+              <strong>General Price : ₹650/-</strong>(plus tax)
+            </h3>
+          </div>
+
+          <!-- Pet Parade -->
+          <!-- <div class="bg-[#34D399] text-white p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">PET PARADE</h3>
               <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
               <p><strong>Age:</strong> 10 Years - 60 Years</p>
@@ -334,8 +418,8 @@
               </p>
             </div>
            -->
-            <!-- Seniors Walk -->
-            <!-- <div class="bg-[#FACC15] text-gray-900 p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+          <!-- Seniors Walk -->
+          <!-- <div class="bg-[#FACC15] text-gray-900 p-8 rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
               <h3 class="font-bold italic text-lg">SENIORS WALK</h3>
               <p class="mt-2"><strong>Distance:</strong> 1.5 KM</p>
               <p><strong>Age:</strong> 60 Years and above</p>
@@ -343,173 +427,271 @@
                 Price includes Event T-shirt, Timed Bib, Finisher Medal, Breakfast, Safety and Medical Support.
               </p>
             </div> -->
-          </div>
-          
         </div>
-      </section>
-      <!-- Cards ends -->
-       <!-- ===================================================================================================== -->
+      </div>
+    </section>
+    <!-- Cards ends -->
+    <!-- ===================================================================================================== -->
 
     <!-- Story begins -->
-    <section class=" py-10 md:py-20"  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
-        <div class="wrapper">
-          <!-- Grid layout for large screens, stacked for small screens -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-            
-            <!-- Event Story & Legacy -->
-            <div>
-              <h2 class="text-xl md:text-2xl font-bold text-gray-900 flex items-center gap-2">
-                🏡 Event Story & Legacy
-              </h2>
-              <p class="text-[#6D6D6D] mt-3 text-base md:text-[18px] leading-relaxed">
-                Carmel Run started as a small initiative by Carmel High School, Basaveshwaranagar, 
-                to encourage fitness and community engagement. Over the years, it has grown into a celebrated 
-                annual event, bringing together students, families, and fitness enthusiasts.
-              </p>
-            </div>
-      
-            <!-- Past Editions Impact -->
-            <div>
-              <h2 class="text-xl font-bold text-gray-900 flex items-center gap-2">
-                💡 Past Editions Impact:
-              </h2>
-              <ul class="mt-4">
-                <li class="flex items-center gap-4 mt-[28px]">
-                  <svg class="flex items-center justify-center" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="60" height="60" rx="30" fill="white"/>
-                    <g clip-path="url(#clip0_196_223)">
-                    <path d="M44.0664 29.8809L32.1777 29.0898L36.6309 23.3652L30.9062 27.8184L30.1152 15.9297H29.8809L29.0898 27.8184L23.3652 23.3652L27.8184 29.0898L15.9297 29.8809V30.1152L27.8184 30.9062L23.3652 36.6309L29.0898 32.1777L29.8809 44.0664H30.1152L30.9062 32.1777L36.6309 36.6309L32.1777 30.9062L44.0664 30.1152V29.8809Z" fill="#FF8E00"/>
-                    </g>
-                    <defs>
+    <section
+      class="py-10 md:py-20"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-offset="200"
+    >
+      <div class="wrapper">
+        <!-- Grid layout for large screens, stacked for small screens -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          <!-- Event Story & Legacy -->
+          <div>
+            <h2
+              class="text-xl md:text-2xl font-bold text-gray-900 flex items-center gap-2"
+            >
+              🏡 Event Story & Legacy
+            </h2>
+            <p
+              class="text-[#6D6D6D] mt-3 text-base md:text-[18px] leading-relaxed"
+            >
+              Carmel Run started as a small initiative by Carmel High School,
+              Basaveshwaranagar, to encourage fitness and community engagement.
+              Over the years, it has grown into a celebrated annual event,
+              bringing together students, families, and fitness enthusiasts.
+            </p>
+          </div>
+
+          <!-- Past Editions Impact -->
+          <div>
+            <h2 class="text-xl font-bold text-gray-900 flex items-center gap-2">
+              💡 Past Editions Impact:
+            </h2>
+            <ul class="mt-4">
+              <li class="flex items-center gap-4 mt-[28px]">
+                <svg
+                  class="flex items-center justify-center"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="60" height="60" rx="30" fill="white" />
+                  <g clip-path="url(#clip0_196_223)">
+                    <path
+                      d="M44.0664 29.8809L32.1777 29.0898L36.6309 23.3652L30.9062 27.8184L30.1152 15.9297H29.8809L29.0898 27.8184L23.3652 23.3652L27.8184 29.0898L15.9297 29.8809V30.1152L27.8184 30.9062L23.3652 36.6309L29.0898 32.1777L29.8809 44.0664H30.1152L30.9062 32.1777L36.6309 36.6309L32.1777 30.9062L44.0664 30.1152V29.8809Z"
+                      fill="#FF8E00"
+                    />
+                  </g>
+                  <defs>
                     <clipPath id="clip0_196_223">
-                    <rect width="30" height="30" fill="white" transform="translate(15 15)"/>
+                      <rect
+                        width="30"
+                        height="30"
+                        fill="white"
+                        transform="translate(15 15)"
+                      />
                     </clipPath>
-                    </defs>
-                    </svg>
-                    
-                  <p class="text-[#6D6D6D] text-base md:text-[18px]">
-                    Thousands of participants across different age groups
-                  </p>
-                </li>
-                <li class="flex items-center gap-4 mt-[28px]">
-                  <svg class="flex items-center justify-center" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="60" height="60" rx="30" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0067 32.1559C21.0067 32.1559 19.6575 32.3411 18.7448 31.2829C18.7448 31.2829 18.229 30.7141 18.348 29.7088C18.4141 29.1532 18.4538 29.0077 18.3348 28.6109C18.2554 28.3464 18.1231 27.9231 18.4671 27.5792C18.811 27.2485 19.0491 27.1559 19.1417 26.8781C19.2343 26.6003 19.102 26.3887 19.0226 25.9125C18.9432 25.4363 19.3004 25.1718 19.5253 24.9998C19.8559 24.7353 19.9089 24.603 20.1866 24.1268C20.6893 23.2405 21.4432 23.0818 21.4432 23.0818C22.8057 22.7644 23.7845 23.7167 23.7845 23.7167L27.9247 27.5395L25.5702 22.4204C25.5702 22.4204 24.975 21.1903 25.6893 19.9998C25.6893 19.9998 26.0729 19.3384 27.0649 19.1268C27.6073 19.021 27.7528 19.0077 28.1099 18.7696C28.3348 18.6241 28.6919 18.3464 29.1284 18.5712C29.5517 18.7961 29.7104 18.9945 30.0014 18.9813C30.3057 18.9813 30.4512 18.7961 30.8745 18.5712C31.2977 18.3464 31.6681 18.6109 31.893 18.7696C32.2369 19.0077 32.3956 19.0077 32.938 19.1268C33.93 19.3252 34.3136 19.9998 34.3136 19.9998C35.0279 21.1903 34.4327 22.4204 34.4327 22.4204L32.0914 27.5527L36.2316 23.73C36.2316 23.73 37.2104 22.7776 38.5729 23.095C38.5729 23.095 39.3268 23.2538 39.8295 24.14C40.1073 24.6294 40.1602 24.7617 40.4909 25.013C40.7025 25.185 41.0729 25.4363 40.9935 25.9257C40.9141 26.4019 40.7686 26.6003 40.8745 26.8913C40.9671 27.1823 41.1919 27.2617 41.5491 27.5924C41.893 27.9231 41.7607 28.3596 41.6813 28.6241C41.5755 29.0342 41.602 29.1665 41.6681 29.722C41.7872 30.7273 41.2713 31.2961 41.2713 31.2961C40.3586 32.3543 39.0094 32.1691 39.0094 32.1691L33.4009 31.5342L38.3348 34.2855C38.3348 34.2855 39.5385 34.9204 39.6708 36.3093C39.6708 36.3093 39.7501 37.0765 39.0755 37.8305C38.7052 38.2405 38.5861 38.3331 38.4406 38.73C38.348 38.9945 38.2157 39.4178 37.7395 39.4839C37.2634 39.5501 37.0253 39.4839 36.7872 39.6691C36.5491 39.8411 36.5358 40.0792 36.3242 40.5289C36.1126 40.9654 35.6628 40.9654 35.385 40.9786C34.9618 41.0051 34.8427 41.0712 34.3401 41.3093C33.4141 41.7326 32.7131 41.4284 32.7131 41.4284C31.43 40.886 31.1787 39.5501 31.1787 39.5501L30.0147 34.021L28.8507 39.5501C28.8507 39.5501 28.5993 40.886 27.3163 41.4284C27.3163 41.4284 26.6152 41.7326 25.6893 41.3093C25.1866 41.0712 25.0544 41.0051 24.6443 40.9786C24.3665 40.9654 23.9168 40.9654 23.7052 40.5289C23.4935 40.0924 23.4935 39.8543 23.2422 39.6691C23.0041 39.4839 22.766 39.5501 22.2898 39.4839C21.8136 39.4178 21.6813 38.9813 21.5887 38.73C21.4432 38.3331 21.3374 38.2405 20.9538 37.8305C20.266 37.0765 20.3586 36.3093 20.3586 36.3093C20.4909 34.9204 21.6946 34.2855 21.6946 34.2855L26.6284 31.5342L21.0067 32.1559Z" fill="#00C2CB"/>
-                    </svg>
-                    
-                  <p class="text-[#6D6D6D] text-base md:text-[18px]">
-                    Raised funds for social causes & community well-being
-                  </p>
-                </li>
-                <li class="flex items-center gap-4 mt-[28px]">
-                  <svg class="flex items-center justify-center" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="60" height="60" rx="30" fill="white"/>
-                    <path d="M26.6915 16.4922L25.2545 29.0442L16.2305 29.0772L24.5195 31.7592L18.2645 36.5172L24.7115 34.9542L20.7665 43.5042L31.5485 36.3582L35.6465 41.1192L34.9595 35.1102L40.7195 37.0392L36.2435 30.8922L43.7705 28.5042L34.2365 28.5072L35.0285 21.3162L30.5015 26.4192L26.6915 16.4922Z" fill="#7DCE13"/>
-                    </svg>
-                    
-                    
-                  <p class="text-[#6D6D6D] text-base md:text-[18px]">
-                    Inspired many to adopt a healthier lifestyle
-                  </p>
-                </li>
-              </ul>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      <!-- Story ends -->
-       <!-- ====================================================================================================== -->
-      
-       <!-- Why join begins -->
-       <section class="bg-[#F9F9F9] py-12 md:py-24 "  data-aos="fade-up" data-aos-delay="300" data-aos-offset="200">
-        <div class="wrapper text-center">
-          
-          <!-- Section Title -->
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 flex items-center justify-center gap-2">
-            🎯 Why Join Carmel Run?
-          </h2>
-      
-          <!-- Curved Dotted Line (SVG) -->
-          <div class="relative hidden md:block pt-[62px]">
-            <svg class="w-full absolute top-8 left-0 " width="1119" height="128" viewBox="0 0 1119 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 48.5C87 11.5 282.6 44.6988 293 125.499C410.333 54.1657 663.7 -61.9004 738.5 44.4996C837.5 20.6664 1052 3.2 1118 124" stroke="#BCBCBC" stroke-width="2" stroke-dasharray="6 6"/>
+                  </defs>
                 </svg>
-                
+
+                <p class="text-[#6D6D6D] text-base md:text-[18px]">
+                  Thousands of participants across different age groups
+                </p>
+              </li>
+              <li class="flex items-center gap-4 mt-[28px]">
+                <svg
+                  class="flex items-center justify-center"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="60" height="60" rx="30" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.0067 32.1559C21.0067 32.1559 19.6575 32.3411 18.7448 31.2829C18.7448 31.2829 18.229 30.7141 18.348 29.7088C18.4141 29.1532 18.4538 29.0077 18.3348 28.6109C18.2554 28.3464 18.1231 27.9231 18.4671 27.5792C18.811 27.2485 19.0491 27.1559 19.1417 26.8781C19.2343 26.6003 19.102 26.3887 19.0226 25.9125C18.9432 25.4363 19.3004 25.1718 19.5253 24.9998C19.8559 24.7353 19.9089 24.603 20.1866 24.1268C20.6893 23.2405 21.4432 23.0818 21.4432 23.0818C22.8057 22.7644 23.7845 23.7167 23.7845 23.7167L27.9247 27.5395L25.5702 22.4204C25.5702 22.4204 24.975 21.1903 25.6893 19.9998C25.6893 19.9998 26.0729 19.3384 27.0649 19.1268C27.6073 19.021 27.7528 19.0077 28.1099 18.7696C28.3348 18.6241 28.6919 18.3464 29.1284 18.5712C29.5517 18.7961 29.7104 18.9945 30.0014 18.9813C30.3057 18.9813 30.4512 18.7961 30.8745 18.5712C31.2977 18.3464 31.6681 18.6109 31.893 18.7696C32.2369 19.0077 32.3956 19.0077 32.938 19.1268C33.93 19.3252 34.3136 19.9998 34.3136 19.9998C35.0279 21.1903 34.4327 22.4204 34.4327 22.4204L32.0914 27.5527L36.2316 23.73C36.2316 23.73 37.2104 22.7776 38.5729 23.095C38.5729 23.095 39.3268 23.2538 39.8295 24.14C40.1073 24.6294 40.1602 24.7617 40.4909 25.013C40.7025 25.185 41.0729 25.4363 40.9935 25.9257C40.9141 26.4019 40.7686 26.6003 40.8745 26.8913C40.9671 27.1823 41.1919 27.2617 41.5491 27.5924C41.893 27.9231 41.7607 28.3596 41.6813 28.6241C41.5755 29.0342 41.602 29.1665 41.6681 29.722C41.7872 30.7273 41.2713 31.2961 41.2713 31.2961C40.3586 32.3543 39.0094 32.1691 39.0094 32.1691L33.4009 31.5342L38.3348 34.2855C38.3348 34.2855 39.5385 34.9204 39.6708 36.3093C39.6708 36.3093 39.7501 37.0765 39.0755 37.8305C38.7052 38.2405 38.5861 38.3331 38.4406 38.73C38.348 38.9945 38.2157 39.4178 37.7395 39.4839C37.2634 39.5501 37.0253 39.4839 36.7872 39.6691C36.5491 39.8411 36.5358 40.0792 36.3242 40.5289C36.1126 40.9654 35.6628 40.9654 35.385 40.9786C34.9618 41.0051 34.8427 41.0712 34.3401 41.3093C33.4141 41.7326 32.7131 41.4284 32.7131 41.4284C31.43 40.886 31.1787 39.5501 31.1787 39.5501L30.0147 34.021L28.8507 39.5501C28.8507 39.5501 28.5993 40.886 27.3163 41.4284C27.3163 41.4284 26.6152 41.7326 25.6893 41.3093C25.1866 41.0712 25.0544 41.0051 24.6443 40.9786C24.3665 40.9654 23.9168 40.9654 23.7052 40.5289C23.4935 40.0924 23.4935 39.8543 23.2422 39.6691C23.0041 39.4839 22.766 39.5501 22.2898 39.4839C21.8136 39.4178 21.6813 38.9813 21.5887 38.73C21.4432 38.3331 21.3374 38.2405 20.9538 37.8305C20.266 37.0765 20.3586 36.3093 20.3586 36.3093C20.4909 34.9204 21.6946 34.2855 21.6946 34.2855L26.6284 31.5342L21.0067 32.1559Z"
+                    fill="#00C2CB"
+                  />
+                </svg>
+
+                <p class="text-[#6D6D6D] text-base md:text-[18px]">
+                  Raised funds for social causes & community well-being
+                </p>
+              </li>
+              <li class="flex items-center gap-4 mt-[28px]">
+                <svg
+                  class="flex items-center justify-center"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="60" height="60" rx="30" fill="white" />
+                  <path
+                    d="M26.6915 16.4922L25.2545 29.0442L16.2305 29.0772L24.5195 31.7592L18.2645 36.5172L24.7115 34.9542L20.7665 43.5042L31.5485 36.3582L35.6465 41.1192L34.9595 35.1102L40.7195 37.0392L36.2435 30.8922L43.7705 28.5042L34.2365 28.5072L35.0285 21.3162L30.5015 26.4192L26.6915 16.4922Z"
+                    fill="#7DCE13"
+                  />
+                </svg>
+
+                <p class="text-[#6D6D6D] text-base md:text-[18px]">
+                  Inspired many to adopt a healthier lifestyle
+                </p>
+              </li>
+            </ul>
           </div>
-      
-          <!-- Benefits Cards Section -->
-          <div class="flex flex-wrap justify-center md:justify-around gap-6 mt-16">
-  
-            <!-- Card 1 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300">
-              <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">🏃‍♂️ Stay Fit</h3>
-              <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
-                Engage in a healthy challenge that boosts physical & mental well-being.
-              </p>
-            </div>
-          
-            <!-- Card 2 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300">
-              <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">❤️ Support a Cause</h3>
-              <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
-                Every step contributes to a noble mission, impacting lives beyond the race.
-              </p>
-            </div>
-          
-            <!-- Card 3 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300">
-              <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">🥇 Earn Medals & Goodies</h3>
-              <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
-                All participants receive event T-shirts, finisher medals, and exclusive goodies.
-              </p>
-            </div>
-          
-            <!-- Card 4 -->
-            <div class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl  text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300">
-              <h3 class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]">🎉 Enjoy a Fun Experience</h3>
-              <p class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]">
-                From exciting race-day vibes to post-run celebrations, it’s an experience like no other!
-              </p>
-            </div>
-          
-          </div>
-          
-          
         </div>
-      </section>
-      <!-- Why join ends -->
-      
+      </div>
+    </section>
+    <!-- Story ends -->
+    <!-- ====================================================================================================== -->
 
+    <!-- Why join begins -->
+    <section
+      class="bg-[#F9F9F9] py-12 md:py-24"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-offset="200"
+    >
+      <div class="wrapper text-center">
+        <!-- Section Title -->
+        <h2
+          class="text-2xl md:text-3xl font-bold text-gray-900 flex items-center justify-center gap-2"
+        >
+          🎯 Why Join Carmel Run?
+        </h2>
 
+        <!-- Curved Dotted Line (SVG) -->
+        <div class="relative hidden md:block pt-[62px]">
+          <svg
+            class="w-full absolute top-8 left-0"
+            width="1119"
+            height="128"
+            viewBox="0 0 1119 128"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 48.5C87 11.5 282.6 44.6988 293 125.499C410.333 54.1657 663.7 -61.9004 738.5 44.4996C837.5 20.6664 1052 3.2 1118 124"
+              stroke="#BCBCBC"
+              stroke-width="2"
+              stroke-dasharray="6 6"
+            />
+          </svg>
+        </div>
 
-
-
-        <!-- Scroll to Top Button -->
-        <button id="scrollToTop" class="hidden fixed bottom-6 right-6 bg-blue-600 text-white  rounded-full shadow-lg hover:bg-blue-700 transition w-14" data-aos="fade"
-        data-aos-delay="100"
-        data-aos-offset="200">
-            <img src="./assets/images/up-arrow.svg" alt="up-arrow"> 
-          </button>
-
-          <div class="fixed bottom-4 left-4 z-50 flex flex-col space-y-3"data-aos="fade-right"
-          data-aos-delay="100"
-          data-aos-offset="200">
-            <!-- Contact Button -->
-            <a href="tel:080-23227015" 
-               class="flex items-center space-x-2 bg-blue-500 text-white px-4 py-4 rounded-full shadow-lg hover:bg-blue-600 transition">
-              📞 <span></span>
-            </a>
-          
-            <!-- Mail Button -->
-            <a href="mailto:info@carmelhighschool.org" 
-               class="flex items-center space-x-2 bg-green-500 text-white px-4 py-4 rounded-full shadow-lg hover:bg-green-600 transition">
-              ✉️ <span></span>
-            </a>
+        <!-- Benefits Cards Section -->
+        <div
+          class="flex flex-wrap justify-center md:justify-around gap-6 mt-16"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300"
+          >
+            <h3
+              class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]"
+            >
+              🏃‍♂️ Stay Fit
+            </h3>
+            <p
+              class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]"
+            >
+              Engage in a healthy challenge that boosts physical & mental
+              well-being.
+            </p>
           </div>
-<!-- ============================================================================================================== -->
 
+          <!-- Card 2 -->
+          <div
+            class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300"
+          >
+            <h3
+              class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]"
+            >
+              ❤️ Support a Cause
+            </h3>
+            <p
+              class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]"
+            >
+              Every step contributes to a noble mission, impacting lives beyond
+              the race.
+            </p>
+          </div>
 
+          <!-- Card 3 -->
+          <div
+            class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl text-left transform rotate-[-6deg] hover:rotate-[-3deg] transition duration-300"
+          >
+            <h3
+              class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]"
+            >
+              🥇 Earn Medals & Goodies
+            </h3>
+            <p
+              class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]"
+            >
+              All participants receive event T-shirts, finisher medals, and
+              exclusive goodies.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-[#F9F9F9] h-auto md:h-72 w-full md:w-[20%] px-6 py-8 md:py-6 rounded-2xl text-left transform rotate-[6deg] hover:rotate-[3deg] transition duration-300"
+          >
+            <h3
+              class="text-lg font-semibold flex items-center gap-2 mb-4 md:mb-[28px]"
+            >
+              🎉 Enjoy a Fun Experience
+            </h3>
+            <p
+              class="text-gray-600 text-base md:text-sm mt-2 leading-[28px] md:leading-[32px]"
+            >
+              From exciting race-day vibes to post-run celebrations, it’s an
+              experience like no other!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why join ends -->
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTop"
+      class="hidden fixed bottom-6 right-6 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition w-14"
+      data-aos="fade"
+      data-aos-delay="100"
+      data-aos-offset="200"
+    >
+      <img src="./assets/images/up-arrow.svg" alt="up-arrow" />
+    </button>
+
+    <div
+      class="fixed bottom-4 left-4 z-50 flex flex-col space-y-3"
+      data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-offset="200"
+    >
+      <!-- Contact Button -->
+      <a
+        href="tel:080-23227015"
+        class="flex items-center space-x-2 bg-blue-500 text-white px-4 py-4 rounded-full shadow-lg hover:bg-blue-600 transition"
+      >
+        📞 <span></span>
+      </a>
+
+      <!-- Mail Button -->
+      <a
+        href="mailto:info@carmelhighschool.org"
+        class="flex items-center space-x-2 bg-green-500 text-white px-4 py-4 rounded-full shadow-lg hover:bg-green-600 transition"
+      >
+        ✉️ <span></span>
+      </a>
+    </div>
+    <!-- ============================================================================================================== -->
 
     <!-- Footer begins -->
     <footer
@@ -647,12 +829,16 @@
             >
           </p>
           <div class="flex space-x-4">
-            <a href="#" ><img src="./assets/images/facebook.png" alt="fb"> </a>
-            <a href="#" ><img src="./assets/images/mail.png" alt=""></a>
-            <a href="#" ><img src="./assets/images/linkedin.png" alt="in"></a>
-            <a href="#" ><img src="./assets/images/skype.png" alt="skype"></a>
-            <a href="#" ><img src="./assets/images/twitter.png" alt="twitter"></a>
-            <a href="#" ><img src="./assets/images/instagram.png" alt="insta"></a>
+            <a href="#"><img src="./assets/images/facebook.png" alt="fb" /> </a>
+            <a href="#"><img src="./assets/images/mail.png" alt="" /></a>
+            <a href="#"><img src="./assets/images/linkedin.png" alt="in" /></a>
+            <a href="#"><img src="./assets/images/skype.png" alt="skype" /></a>
+            <a href="#"
+              ><img src="./assets/images/twitter.png" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/instagram.png" alt="insta"
+            /></a>
           </div>
         </div>
       </div>
@@ -669,26 +855,24 @@
       });
     </script>
     <script>
-      
-  const scrollToTopBtn = document.getElementById("scrollToTop");
-    
-    // Show the button when scrolling down
-    window.addEventListener("scroll", function () {
+      const scrollToTopBtn = document.getElementById("scrollToTop");
+
+      // Show the button when scrolling down
+      window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-            scrollToTopBtn.classList.remove("hidden");
+          scrollToTopBtn.classList.remove("hidden");
         } else {
-            scrollToTopBtn.classList.add("hidden");
+          scrollToTopBtn.classList.add("hidden");
         }
-    });
-    
-    // Scroll to top smoothly
-    scrollToTopBtn.addEventListener("click", function () {
+      });
+
+      // Scroll to top smoothly
+      scrollToTopBtn.addEventListener("click", function () {
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+          top: 0,
+          behavior: "smooth",
         });
-    });
+      });
     </script>
   </body>
-
 </html>

@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
-@font-face {
-    font-family: "Minibanana";
-    src: url(/assets/fonts/Minibananademo-BLLyn.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Lucky";
-    src: url(/assets/fonts/LuckyCoin-3zA46.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Super";
-    src: url(/assets/fonts/SuperCreamy-OGAPp.ttf);
-}
+
 @font-face {
     font-family: "Owl";
     src: url(/assets/fonts/OwlcuteRegular-3zwaZ.otf);
@@ -19,16 +8,19 @@
   font-family: 'Racing Sans One Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Racing Sans One Regular'), url('RacingSansOne-Regular.woff') format('woff');
+  src: local('Racing Sans One Regular'), url('RacingSansOne-Regular.woff') format('truetype');
   }
-
+@font-face {
+  font-family: 'Onest';
+  src: url(/assets/fonts/Onest-Regular.ttf);
+}
 * {
     color: black;
     margin: 0%;
     padding: 0%;
     text-decoration: none;
     list-style: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Onest';
   }
   .wrapper{
     width: 85%;
@@ -56,6 +48,9 @@
   font-family: 'Racing Sans One Regular' !important;
 }
 
+.Onest{
+  font-family: 'Onest';
+}
 
 
 
