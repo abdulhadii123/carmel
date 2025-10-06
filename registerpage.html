@@ -57,12 +57,12 @@
           >Race</a
         >
         <a
-          href="#"
+          href="./rulesrootmap.html"
           class="nav-link text-blue font-semibold  hover:text-blue-600"
           >Rules</a
         >
         <a
-          href="#"
+          href="./result.html"
           class="nav-link text-blue font-semibold hover:text-blue-600"
           >Result</a
         >
@@ -109,12 +109,12 @@
         >Race</a
       >
       <a
-        href="#"
+        href="./rulesrootmap.html"
         class="block py-2 text-gray-700 hover:text-blue-600"
         >Rules</a
       >
       <a
-        href="#"
+        href="./result.html"
         class="block py-2 text-gray-700 hover:text-blue-600"
         >Result</a
       >
@@ -315,12 +315,9 @@
                             </div>
                             <div>
                                 <label class="block text-gray-700">T-Shirt Size</label>
-                                <select name="t_shirt_size[]" class="w-full px-4 py-2 border rounded-lg" required>
-                                    <option value=""></option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                </select>
+                                <div name="t_shirt_size[]" class="w-full px-4 py-2 border rounded-lg cursor-pointer bg-white" required readonly onclick="openSizeChart(this)">
+                                  <option value=""></option>
+                                </div>
                             </div>
                             <div>
                                 <label class="block text-gray-700">Bib Collection Point</label>
@@ -390,6 +387,44 @@
           ✉️ <span></span>
         </a>
       </div>
+<!-- ================================================================================================= -->
+
+<!-- Size Chart Modal -->
+<div id="sizeChartModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999] hidden">
+  <div class="bg-white p-6 rounded-2xl max-w-md w-full mx-4 shadow-lg relative animate-zoomIn text-center">
+    <button onclick="closeSizeChart()" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-lg font-bold">×</button>
+    <img src="./assets/images/blktshirt.jpg" alt="T-Shirt Preview" class="mx-auto mb-4 w-32 h-auto object-contain" />
+    <h2 class="text-xl font-semibold mb-4 text-center">Select Your T-Shirt Size</h2>
+    <table class="w-full text-sm border border-gray-300">
+      <thead>
+        <tr class="bg-gray-100 text-gray-700">
+          <th class="border px-3 py-2">Size</th>
+          <th class="border px-3 py-2">Chest (in)</th>
+          <th class="border px-3 py-2">Length (in)</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr class="hover:bg-orange-100 cursor-pointer" onclick="selectSize('S')">
+          <td class="border px-3 py-2">S</td>
+          <td class="border px-3 py-2">34 - 36</td>
+          <td class="border px-3 py-2">26</td>
+        </tr>
+        <tr class="hover:bg-orange-100 cursor-pointer" onclick="selectSize('M')">
+          <td class="border px-3 py-2">M</td>
+          <td class="border px-3 py-2">38 - 40</td>
+          <td class="border px-3 py-2">27</td>
+        </tr>
+        <tr class="hover:bg-orange-100 cursor-pointer" onclick="selectSize('L')">
+          <td class="border px-3 py-2">L</td>
+          <td class="border px-3 py-2">42 - 44</td>
+          <td class="border px-3 py-2">28</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
 
     <!-- Footer begins -->
     <footer
@@ -550,6 +585,8 @@
         once: false, // Animate only once
       });
     </script>
+          
+          <!-- Scroll to Top Button -->
           <script>
               const scrollToTopBtn = document.getElementById("scrollToTop");
       
@@ -570,6 +607,9 @@
                   });
               });
           </script>
+          <!-- ================================================================================== -->
+
+          <!-- Register More Students -->
            <script>
 
             document.addEventListener("DOMContentLoaded", function () {
@@ -609,6 +649,9 @@
           });
           
            </script>
+<!-- ======================================================================================================================== -->
+ 
+           <!-- RaceType -->
            <script>
             document.addEventListener("DOMContentLoaded", function () {
               // Function to enable or disable the category field based on race type
@@ -633,6 +676,31 @@
               });
             });
           </script>
+<!-- ============================================================================================================================== -->
+
+          <!--Tshirt-Sizechart  -->
+          <script>
+            let currentTshirtDropdown = null;
+          
+            function openSizeChart(dropdown) {
+              currentTshirtDropdown = dropdown;
+              document.getElementById("sizeChartModal").classList.remove("hidden");
+            }
+          
+            function closeSizeChart() {
+              document.getElementById("sizeChartModal").classList.add("hidden");
+            }
+          
+            function selectSize(size) {
+              if (currentTshirtDropdown) {
+                // Clear existing options and add the selected one
+                currentTshirtDropdown.innerHTML = `<option value="${size}" selected>${size}</option>`;
+              }
+              closeSizeChart();
+            }
+            
+          </script>
+          <!-- ==================================================================================================== -->
           
   </body>
   

@@ -23,8 +23,8 @@
     font-family: 'Onest';
   }
   .wrapper{
-    width: 85%;
-    max-width: 1950px;
+    width: 80%;
+    max-width: 1920px;
     margin: 0 auto;
   }
   button:hover{
@@ -105,3 +105,17 @@
     margin: 0 5px; /* Add spacing between dots */
 }
 
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 0.5s ease-out forwards;
+}
